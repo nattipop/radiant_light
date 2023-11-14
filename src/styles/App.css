@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=Julius+Sans+One&family=Playfair+Display&family=Raleway:wght@300&family=Source+Sans+3:wght@200&family=Yeseva+One&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.header-title {
+  font-size: 45px;
+}
+
+.header-sub {
+  font-size: 20px;
+}
+
+.container {
+  padding: 50px;
+}
+
+.archivo {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.julius-so {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.source-s3 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.yeseva {
+  font-family: "Yeseva One", serif;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.photos {
+  overflow: hidden;
+}
+
+.palette {
+  height: 170px;
+  overflow: hidden;
+}
+
+#logo-backdrop {
+  background-color: rgb(33, 22, 20);
+  width: 100%;
+  padding: 70px;
+}
