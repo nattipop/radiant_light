@@ -53,6 +53,17 @@
   height: 120px;
   width: 100px;
   margin: 30px;
+  transition: margin 0.2s ease-in;
+}
+
+.color-box:hover {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+#color-palette {
+  height: 180px;
 }
 
 .pink {
