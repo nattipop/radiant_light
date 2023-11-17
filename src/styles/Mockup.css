@@ -1,0 +1,80 @@
+.header-title {
+  font-size: 45px;
+}
+
+.header-sub {
+  font-size: 20px;
+}
+
+.container {
+  padding: 50px;
+}
+
+.archivo {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.julius-so {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.source-s3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: bold;
+}
+
+.yeseva {
+  font-family: "Yeseva One", serif;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.photos {
+  overflow: hidden;
+}
+
+.palette {
+  margin-top: 73px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.color-box {
+  height: 120px;
+  width: 100px;
+  margin: 30px;
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.light-pink {
+  background-color: var(--light-pink);
+}
+
+.brown {
+  background-color: var(--brown);
+}
+
+.light-brown {
+  background-color: var(--light-brown);
+}
+
+.gray {
+  background-color: var(--gray);
+}
+
+.green {
+  background-color: var(--green);
+}
