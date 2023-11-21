@@ -1,5 +1,5 @@
 .header-title {
-  font-size: 45px;
+  font-size: 60px;
 }
 
 .header-sub {
@@ -10,33 +10,12 @@
   padding: 50px;
 }
 
-.archivo {
-  font-family: "Archivo Narrow", sans-serif;
-}
-
 .julius-so {
   font-family: "Julius Sans One", sans-serif;
 }
 
-.playfair {
-  font-family: "Playfair Display", serif;
-}
-
 .raleway {
-  font-family: "Raleway", sans-serif;
-}
-
-.source-s3 {
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: bold;
-}
-
-.yeseva {
-  font-family: "Yeseva One", serif;
-}
-
-.bebas-neue {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Gabarito", sans-serif;
 }
 
 .photos {
@@ -62,30 +41,108 @@
   cursor: pointer;
 }
 
-#color-palette {
+.color-palette {
   height: 180px;
+  margin-top: 200px;
 }
 
-.pink {
-  background-color: var(--pink);
+.background-button {
+  position: fixed;
+  background-color: var(--a-1);
+  color: white;
+  box-shadow: 2px 2px var(--a-5);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  top: 260px;
+  left: 20px;
 }
 
-.light-pink {
-  background-color: var(--light-pink);
+.a-one {
+  background-color: var(--a-1);
 }
 
-.brown {
-  background-color: var(--brown);
+.a-two {
+  background-color: var(--a-2);
 }
 
-.light-brown {
-  background-color: var(--light-brown);
+.a-three {
+  background-color: var(--a-3);
 }
 
-.gray {
-  background-color: var(--gray);
+.a-four {
+  background-color: var(--a-4);
 }
 
-.green {
-  background-color: var(--green);
+.a-five {
+  background-color: var(--a-5);
+}
+
+.a-six {
+  background-color: var(--a-6);
+}
+
+.b-one {
+  background-color: var(--b-1);
+}
+
+.b-two {
+  background-color: var(--b-2);
+}
+
+.b-three {
+  background-color: var(--b-3);
+}
+
+.b-four {
+  background-color: var(--b-4);
+}
+
+.b-five {
+  background-color: var(--b-5);
+}
+
+.b-six {
+  background-color: var(--b-6);
+}
+
+.c-one {
+  background-color: var(--c-1);
+}
+
+.c-two {
+  background-color: var(--c-2);
+}
+
+.c-three {
+  background-color: var(--c-3);
+}
+
+.c-four {
+  background-color: var(--c-4);
+}
+
+.c-five {
+  background-color: var(--c-5);
+}
+
+.c-six {
+  background-color: var(--c-6);
+}
+
+.d-one {
+  background-color: var(--d-1);
+}
+
+.d-two {
+  background-color: var(--d-2);
+}
+
+.d-three {
+  background-color: var(--d-3);
+}
+
+.d-four {
+  background-color: var(--d-4);
 }

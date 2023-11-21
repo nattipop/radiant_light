@@ -9,6 +9,14 @@ const Mockup = () => {
   
   return (
     <div>
+      <button className="background-button" onClick={() => {
+        if (document.body.style.backgroundColor === "rgb(0, 0, 0)") {
+          return document.body.style.backgroundColor = "rgb(255, 255, 255)";
+        }
+        if (document.body.style.backgroundColor === "rgb(255, 255, 255)") {
+          return document.body.style.backgroundColor = "rgb(0,0,0)";
+        };
+      }}>Background color</button>
       <div className='row palette'>
         <div className='col-2'>
           <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1699925825/IMG_0780_m8jyrd.jpg" alt="" />
@@ -30,38 +38,42 @@ const Mockup = () => {
         </div>
       </div>
       <div className='row'>
-        <div className='container col-4'>
-          <h1 className='header-title julius-so'>Ready to shine?</h1>
-          <h3 className='header-sub archivo'>Radiant Light Hair Design</h3>
-        </div>
-        <div className='container col-4'>
-          <h1 className='header-title playfair'>Ready to shine?</h1>
-          <h3 className='header-sub raleway'>Radiant Light Hair Design</h3>
-        </div>
-        <div className='container col-4'>
-          <h1 className='header-title playfair'>Ready to shine?</h1>
-          <h3 className='header-sub source-s3'>Radiant Light Hair Design</h3>
-        </div>
-        <div className='container col-4'>
-          <h1 className='header-title julius-so'>Ready to shine?</h1>
-          <h3 className='header-sub raleway'>Radiant Light Hair Design</h3>
-        </div>
-        <div className='container col-4'>
-          <h1 className='header-title yeseva'>Ready to shine?</h1>
-          <h3 className='header-sub bebas-neue'>Radiant Light Hair Design</h3>
-        </div>
-        <div className='container col-4'>
-          <h1 className='header-title julius-so'>Ready to shine?</h1>
-          <h3 className='header-sub yeseva'>Radiant Light Hair Design</h3>
+        <div className='container'>
+          <h1 className='header-title julius-so'>Radiant Light Hair Design</h1>
+          <h3 className='header-sub raleway'>Providing colors, cuts, and event hair in Northern Wisconsin</h3>
         </div>
       </div>
-      <div id="color-palette" className="row">
-        <div className="col color-box pink" />
-        <div className="col color-box light-pink" />
-        <div className="col color-box light-brown" />
-        <div className="col color-box brown" />
-        <div className="col color-box gray" />
-        <div className="col color-box green" />
+      <div className="color-palette row">
+        <div className="col color-box a-one" />
+        <div className="col color-box a-two" />
+        <div className="col color-box a-four" />
+        <div className="col color-box a-three" />
+        <div className="col color-box a-five" />
+        <div className="col color-box a-six" />
+      </div>
+      <div className="color-palette row">
+        <div className="col color-box b-one" />
+        <div className="col color-box b-three" />
+        <div className="col color-box b-six" />
+        <div className="col color-box b-two" />
+        <div className="col color-box b-four" />
+        <div className="col color-box b-five" />
+      </div>
+      <div className="color-palette row">
+        {/* <div className="col color-box b-three" /> */}
+        <div className="col color-box b-one" />
+        <div className="col color-box c-three" />
+        <div className="col color-box c-four" />
+        <div className="col color-box c-six" />
+        <div className="col color-box c-two" />
+      </div>
+      <div className="color-palette row">
+        <div className="col color-box d-one" />
+        <div className="col color-box d-two" />
+        <div className="col color-box d-three" />
+        <div className="col color-box d-four" />
+        {/* <div className="col color-box c-six" />
+        <div className="col color-box c-two" /> */}
       </div>
       <div className='row photos'>
         <div className='col-3' style={{margin: "0px", padding: "0px"}}>

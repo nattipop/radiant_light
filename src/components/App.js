@@ -6,6 +6,8 @@ import Nav from './Nav';
 import About from './About';
 import Contact from './Contact';
 import Home from './Home';
+import Portfolio from './Portfolio';
+import Services from './Services';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/meet-the-stylist" element={<About />} />
         <Route path="/contact" element={<Contact />} /> 
+        <Route path="/services" element={<Services />} />
+        <Route path="/gallery" element={<Portfolio />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
