@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../styles/Home.css"
+import logo from "../RadiantLightAllWhite.png"
 
 const Home = () => {
   useEffect(() => {
@@ -9,7 +10,12 @@ const Home = () => {
 
   return (
     <div id="home" className="julius-so">
-      Home
+      <div className="home-header">
+        <img className="home-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1700670304/IMG_4476_grrbmf.jpg" width="100%" alt="" />
+        <div className="home-overlay">
+          <img src={logo} width="700px" alt="" />
+        </div>
+      </div>
     </div>
   )
 }
