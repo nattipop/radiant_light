@@ -45,7 +45,7 @@ const Nav = () => {
           <h3><Link to="/home">Home</Link></h3>
         </li>
         <li aria-current="page" id="about-link" className="nav-li raleway">
-          <h3><Link to="/meet-the-stylist">Meet the Stylist</Link></h3>
+          <h3><Link to="/meet-the-stylist">About</Link></h3>
         </li>
         <li aria-current="page" id="services-link" className="nav-li raleway">
           <h3><Link to="/services">Services</Link></h3>
@@ -54,7 +54,7 @@ const Nav = () => {
           <h3><a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>Book</a></h3>
         </li>
         <li aria-current="page" id="shop-link" className="nav-li raleway">
-          <h3><Link to="/shop">Shop</Link></h3>
+          <h3><Link to="https://cp.salonhq.co/radiant-light-hair-design">Shop</Link></h3>
         </li>
         <li aria-current="page" id="gallery-link" className="nav-li raleway">
           <h3><Link to="/gallery">Gallery</Link></h3>

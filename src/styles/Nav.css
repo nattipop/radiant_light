@@ -5,7 +5,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--a-3);
+  background-color: var(--contrast);
   z-index: 2;
 }
 
@@ -26,10 +26,10 @@ nav {
 .nav-li h3 {
   color: white;
   font-size: 18px;
-  background-image: linear-gradient(var(--a-1), var(--a-1));
+  background-image: linear-gradient(var(--pink), var(--pink));
   background-size: 0% 0.1em;
   background-position-x: 0%;
-  background-position-y: 100%;
+  background-position-y: 104%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
@@ -45,9 +45,9 @@ nav {
 }
 
 #cta-button {
-  background-color: var(--a-1);
+  background-color: var(--teal);
   color: white;
-  box-shadow: 2px 2px var(--a-5);
+  box-shadow: 2px 2px var(--teal);
   outline: none;
   border: none;
   border-radius: 4px;
@@ -56,8 +56,8 @@ nav {
 }
 
 #cta-button:hover {
-  box-shadow: 1px 1px var(--a-5);
-  background-color: rgb(147, 44, 16);
+  box-shadow: 1px 1px var(--light-teal);
+  background-color: var(--light-teal);
 }
 
 #nav-logo {

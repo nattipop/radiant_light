@@ -5,3 +5,20 @@
   color: var(--pink);
   font-size: 30px;
 }
+
+#mts-img {
+  width: 300px;
+  border-radius: 100px;
+}
+
+#mts-header {
+  text-align: left;
+}
+
+#mts-title {
+  font-size: 40px;
+}
+
+#mts-desc {
+  font-size: 22px;
+}

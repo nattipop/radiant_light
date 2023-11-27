@@ -48,9 +48,9 @@
 
 .background-button {
   position: fixed;
-  background-color: var(--a-1);
+  background-color: var(--teal);
   color: white;
-  box-shadow: 2px 2px var(--a-5);
+  box-shadow: 2px 2px var(--light-teal);
   outline: none;
   border: none;
   border-radius: 4px;
@@ -59,90 +59,22 @@
   left: 20px;
 }
 
-.a-one {
-  background-color: var(--a-1);
+.contrast {
+  background-color: var(--contrast);
 }
 
-.a-two {
-  background-color: var(--a-2);
+.pink {
+  background-color: var(--pink);
 }
 
-.a-three {
-  background-color: var(--a-3);
+.light-teal {
+  background-color: var(--light-teal);
 }
 
-.a-four {
-  background-color: var(--a-4);
+.teal {
+  background-color: var(--teal);
 }
 
-.a-five {
-  background-color: var(--a-5);
-}
-
-.a-six {
-  background-color: var(--a-6);
-}
-
-.b-one {
-  background-color: var(--b-1);
-}
-
-.b-two {
-  background-color: var(--b-2);
-}
-
-.b-three {
-  background-color: var(--b-3);
-}
-
-.b-four {
-  background-color: var(--b-4);
-}
-
-.b-five {
-  background-color: var(--b-5);
-}
-
-.b-six {
-  background-color: var(--b-6);
-}
-
-.c-one {
-  background-color: var(--c-1);
-}
-
-.c-two {
-  background-color: var(--c-2);
-}
-
-.c-three {
-  background-color: var(--c-3);
-}
-
-.c-four {
-  background-color: var(--c-4);
-}
-
-.c-five {
-  background-color: var(--c-5);
-}
-
-.c-six {
-  background-color: var(--c-6);
-}
-
-.d-one {
-  background-color: var(--d-1);
-}
-
-.d-two {
-  background-color: var(--d-2);
-}
-
-.d-three {
-  background-color: var(--d-3);
-}
-
-.d-four {
-  background-color: var(--d-4);
+.light-tan {
+  background-color: var(--light-tan);
 }
