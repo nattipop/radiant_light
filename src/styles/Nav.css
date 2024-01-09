@@ -5,7 +5,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--contrast);
+  background-color: var(--teal);
   z-index: 2;
 }
 
@@ -24,9 +24,9 @@ nav {
 }
 
 .nav-li h3 {
-  color: white;
+  color: var(--contrast);
   font-size: 18px;
-  background-image: linear-gradient(var(--pink), var(--pink));
+  background-image: linear-gradient(var(--teal), var(--teal));
   background-size: 0% 0.1em;
   background-position-x: 0%;
   background-position-y: 104%;

@@ -1,8 +1,8 @@
 #about {
   margin-top: 73px;
   width: 100vw;
-  height: 800px;
-  color: var(--pink);
+  height: auto;
+  color: var(--contrast);
   font-size: 30px;
 }
 
@@ -13,6 +13,7 @@
 
 #mts-header {
   text-align: left;
+  margin: auto;
 }
 
 #mts-title {

@@ -5,3 +5,18 @@
   color: var(--pink);
   font-size: 30px;
 }
+
+.img-style-cover {
+  width: 500px;
+}
+
+.img-style-small {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-area: 500px / 620px;
+}

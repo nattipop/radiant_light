@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=Gabarito&family=Julius+Sans+One&family=Playfair+Display&family=Raleway:wght@300&family=Source+Sans+3:wght@200&family=Yeseva+One&display=swap");
 
 body {
-  background-color: #ffffff;
+  background-color: var(--light-tan);
 }
 
 .App {
@@ -13,11 +13,74 @@ body {
   --bs-gutter-y: 0;
 }
 
+.button-style {
+  background-color: var(--teal);
+  border: none;
+  color: white;
+  font-family: "Gabarito", sans-serif;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.button-style:hover {
+  background-color: rgb(33, 60, 68);
+}
+
 #error-header {
   margin: 50px;
 }
 
 .current-page h3 {
-  text-decoration: underline var(--pink) 2px;
+  text-decoration: underline var(--teal) 2px;
   text-underline-offset: 3px;
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2XL */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1288px;
+  }
+}
+
+/* XL */
+@media (max-width: 1288px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* L */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* M */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* S */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* XS */
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
+  }
 }

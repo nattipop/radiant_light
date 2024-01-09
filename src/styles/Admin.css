@@ -1,0 +1,21 @@
+#admin {
+  background-color: var(--light-tan);
+  height: 400px;
+  margin-top: 80px;
+  font-family: "Gabarito", sans-serif;
+  color: var(--contrast);
+  padding: 50px;
+}
+
+.admin-input {
+  width: 300px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.form-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
