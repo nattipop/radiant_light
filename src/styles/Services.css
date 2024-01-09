@@ -5,3 +5,15 @@
   color: var(--light-teal);
   font-size: 30px;
 }
+
+#service-list {
+  list-style: none;
+}
+
+.service-li {
+  color: var(--contrast);
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+}

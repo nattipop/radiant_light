@@ -1,30 +1,63 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Portfolio.css";
+import axios from "axios";
 
 const Portfolio = () => {
+  const [weddingData, setWeddingData] = useState();
+  const [highlightsData, setHighlightsData] = useState();
+
+  const fetchPhotos = async () => {
+    try {
+      const response = await axios.get("http://localhost:5000/photos/Wedding");
+
+      setWeddingData(response.data)
+    } catch(err) {
+      console.log(err)
+    }
+
+    try {
+      const response = await axios.get("http://localhost:5000/photos/Highlights");
+
+      setHighlightsData(response.data)
+    } catch(err) {
+      console.log(err)
+    }
+  };
+
   useEffect(() => {
     document.title = "Radiant Light | Gallery";
     window.scrollTo(0, 0);
+
+    fetchPhotos()
   }, []);
 
-  return (
+  const renderWedding = () => {
+    return weddingData.map(photo => {
+      return (
+        <img src={photo.url} alt="" width="200px" key={photo.photo_id} />
+      )
+    })
+  };
+
+  const renderHighlights = () => {
+    console.log(highlightsData)
+    return highlightsData.map(photo => {
+      return (
+        <img src={photo.url} alt="" width="200px" key={photo.photo_id} />
+      )
+    })
+  }
+
+  return weddingData && highlightsData ? (
     <div id="portfolio">
-      <div className="container">
-        <div className="grid">
-          <div className="cover-item">
-            <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3905_e7f9vd.jpg" alt="" id="wedding-cover" className="img-style-cover float-right" />
-          </div>
-          <div className="small-grid">
-            <div className="item-1">
-              <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3876_zc8zrg.jpg" alt="" className="img-style-small" />
-            </div>
-            <div className="item-2">
-              <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3018_n8uwih.jpg" alt="" className="img-style-small" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1 className="julius-so">Wedding</h1>
+      {renderWedding()}
+      <h1 className="julius-so">Highlights</h1>
+      {renderHighlights()}
+      <h1 className="julius-so">Colors</h1>
     </div>
+  ) : (
+    <img src="https://i.stack.imgur.com/ATB3o.gif" alt="" width="400px" />
   )
 }
 

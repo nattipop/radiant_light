@@ -26,7 +26,7 @@ function App() {
         <Route path="/gallery" element={<Portfolio />} />
         <Route path="/admin" element={<Admin />} />
         <Route element={<AuthOutlet fallbackPath='/admin' />}>
-          <Route path='/admin-private' element={<AdminPrivate/>} />
+          <Route path='/admin-private/*' element={<AdminPrivate/>} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
