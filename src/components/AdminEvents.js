@@ -11,7 +11,7 @@ const AdminEvents = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/all-events");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-events");
 
       setEvents(response.data)
     } catch(err) {

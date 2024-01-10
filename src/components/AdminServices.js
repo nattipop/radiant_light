@@ -11,7 +11,7 @@ const AdminServices = () => {
 
   const fetchServices = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/all-services");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-services");
 
       setServices(response.data)
     } catch(err) {

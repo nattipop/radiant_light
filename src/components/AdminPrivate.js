@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import AdminServices from "./AdminServices";
 import AdminEvents from "./AdminEvents";
 import AdminPhotos from "./AdminPhotos";
+import NewPhoto from "./NewPhoto";
 
 const AdminPrivate = () => {
   const signout = useSignOut();
@@ -27,6 +28,7 @@ const AdminPrivate = () => {
       <Routes>
           <Route path="/services" element={<AdminServices />} />
           <Route path="/photos" element={<AdminPhotos />} />
+          <Route path="/photos/new" element={<NewPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
       </Routes>
     </div>

@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   const fetchPhotos = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/photos/Wedding");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Wedding");
 
       setWeddingData(response.data)
     } catch(err) {
@@ -16,7 +16,7 @@ const Portfolio = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/photos/Highlights");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Highlights");
 
       setHighlightsData(response.data)
     } catch(err) {
