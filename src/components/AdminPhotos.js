@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "../styles/AdminPhotos.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AdminPhotos = () => {
   const [photos, setPhotos] = useState();
   const [flaggedPhoto, setFlaggedPhoto] = useState();
+  const navigate = useNavigate();
   
   useEffect(() => {
     fetchPhotos();
@@ -26,7 +27,11 @@ const AdminPhotos = () => {
       return (
         <div id={photo.photo_id} className="col photo-box" key={photo.photo_id}>
           <div className="buttons-box">
-            <button className="button-style edit-button">Edit</button>
+            <button className="button-style edit-button" onClick={e => {
+              const photo_id = e.target.parentElement.parentElement.id;
+
+              navigate(`/admin-private/photos/edit/${photo_id}`);
+            }}>Edit</button>
             <button className="button-style delete-button" onClick={(e) => {
               document.getElementById("confirm-div").style.display = "block";
               setFlaggedPhoto(e.target.parentElement.parentElement.id)
@@ -43,8 +48,10 @@ const AdminPhotos = () => {
 
   const deletePhoto = async() => {
     try {
-      const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-photo/${flaggedPhoto}`)
+      const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-photo/${flaggedPhoto}`);
+
       console.log(response)
+      fetchPhotos();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {
       console.log(err)

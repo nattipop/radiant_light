@@ -7,4 +7,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: "Gabarito", sans-serif;
+}
+
+.form-inputs {
+  margin: 5px;
+  padding: 5px 8px;
+}
+
+#category-select {
+  background-color: var(--teal);
+  color: white;
+}
+
+#back-button {
+  float: left;
 }

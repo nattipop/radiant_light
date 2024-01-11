@@ -1,0 +1,7 @@
+#edit-photo {
+  background-color: var(--light-teal);
+}
+
+#image-display {
+  float: right;
+}

@@ -6,6 +6,8 @@ import AdminServices from "./AdminServices";
 import AdminEvents from "./AdminEvents";
 import AdminPhotos from "./AdminPhotos";
 import NewPhoto from "./NewPhoto";
+import EditPhoto from "./EditPhoto";
+import NewService from "./NewService";
 
 const AdminPrivate = () => {
   const signout = useSignOut();
@@ -27,8 +29,10 @@ const AdminPrivate = () => {
       </div>
       <Routes>
           <Route path="/services" element={<AdminServices />} />
+          <Route path="/services/new" element={<NewService />} />
           <Route path="/photos" element={<AdminPhotos />} />
           <Route path="/photos/new" element={<NewPhoto />} />
+          <Route path="/photos/edit/:photoId" element={<EditPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
       </Routes>
     </div>
