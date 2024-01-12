@@ -8,10 +8,28 @@ import AdminPhotos from "./AdminPhotos";
 import NewPhoto from "./NewPhoto";
 import EditPhoto from "./EditPhoto";
 import NewService from "./NewService";
+import EditService from "./EditService";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const AdminPrivate = () => {
+  const [joy, setJoy] = useState();
   const signout = useSignOut();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    fetchMessage()
+  }, []);
+
+  const fetchMessage = async () => {
+    try {
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/joy");
+
+      setJoy(response.data.message)
+    } catch(err) {
+      console.log(err)
+    }
+  }
 
   const logout = () => {
     signout();
@@ -30,11 +48,15 @@ const AdminPrivate = () => {
       <Routes>
           <Route path="/services" element={<AdminServices />} />
           <Route path="/services/new" element={<NewService />} />
+          <Route path="/services/edit/:serviceId" element={<EditService />} />
           <Route path="/photos" element={<AdminPhotos />} />
           <Route path="/photos/new" element={<NewPhoto />} />
           <Route path="/photos/edit/:photoId" element={<EditPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
       </Routes>
+      <div>
+        <h1 id="joy">{joy}</h1>
+      </div>
     </div>
   )
 }

@@ -16,4 +16,5 @@
   align-items: center;
   flex-direction: column;
   min-width: 200px;
+  background-color: var(--light-teal);
 }

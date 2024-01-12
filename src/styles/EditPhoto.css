@@ -5,3 +5,8 @@
 #image-display {
   float: right;
 }
+
+#current-price {
+  padding: 0px;
+  margin-bottom: 3px;
+}

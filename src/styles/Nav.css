@@ -45,7 +45,7 @@ nav {
 }
 
 #cta-button {
-  background-color: var(--teal);
+  background-color: var(--pink);
   color: white;
   box-shadow: 2px 2px var(--teal);
   outline: none;
@@ -53,6 +53,8 @@ nav {
   border-radius: 4px;
   padding: 10px;
   float: right;
+  min-width: 156px;
+  max-height: 44px;
 }
 
 #cta-button:hover {

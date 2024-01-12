@@ -10,3 +10,8 @@
 .admin-button {
   margin: 10px;
 }
+
+#joy {
+  margin: 100px;
+  color: var(--pink);
+}
