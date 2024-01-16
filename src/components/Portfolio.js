@@ -3,22 +3,22 @@ import "../styles/Portfolio.css";
 import axios from "axios";
 
 const Portfolio = () => {
-  const [weddingData, setWeddingData] = useState();
-  const [highlightsData, setHighlightsData] = useState();
+  const [weddingsData, setWeddingsData] = useState();
+  const [colorsData, setColorsData] = useState();
 
   const fetchPhotos = async () => {
     try {
-      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Wedding");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Weddings");
 
-      setWeddingData(response.data)
+      setWeddingsData(response.data)
     } catch(err) {
       console.log(err)
     }
 
     try {
-      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Highlights");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Colors");
 
-      setHighlightsData(response.data)
+      setColorsData(response.data)
     } catch(err) {
       console.log(err)
     }
@@ -31,30 +31,29 @@ const Portfolio = () => {
     fetchPhotos()
   }, []);
 
-  const renderWedding = () => {
-    return weddingData.map(photo => {
+  const renderWeddings = () => {
+    return weddingsData.map(photo => {
       return (
-        <img src={photo.url} alt="" width="200px" key={photo.photo_id} />
+        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
     })
   };
 
-  const renderHighlights = () => {
-    console.log(highlightsData)
-    return highlightsData.map(photo => {
+  const renderColors = () => {
+    console.log(colorsData)
+    return colorsData.map(photo => {
       return (
-        <img src={photo.url} alt="" width="200px" key={photo.photo_id} />
+        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
     })
   }
 
-  return weddingData && highlightsData ? (
+  return weddingsData && colorsData ? (
     <div id="portfolio">
-      <h1 className="julius-so">Wedding</h1>
-      {renderWedding()}
-      <h1 className="julius-so">Highlights</h1>
-      {renderHighlights()}
+      <h1 className="julius-so">Weddings</h1>
+      {renderWeddings()}
       <h1 className="julius-so">Colors</h1>
+      {renderColors()}
     </div>
   ) : (
     <img src="https://i.stack.imgur.com/ATB3o.gif" alt="" width="400px" />

@@ -27,6 +27,7 @@ const Services = () => {
     return data.map(service => {
       return (
         <li id={service.service_id} key={service.service_id} className="service-li col">
+          <img src={service.picture_url} alt="" width="150px" />
           <h1 className="service-header">{service.title}</h1>
           <h3 className="service-description">{service.description}</h3>
           <h3 className="service-price">{service.price}</h3>

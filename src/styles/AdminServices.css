@@ -10,7 +10,7 @@
 .service-box {
   border: 0.1px var(--contrast) solid;
   padding: 5px;
-  margin: 10px;
+  margin: 10px 10px -30px 10px;
   display: flex;
   justify-content: center;
   align-items: center;

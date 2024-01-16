@@ -10,6 +10,7 @@ body {
   --contrast: rgb(36, 35, 35);
   --pink: #e4634c;
   --light-tan: rgb(242, 230, 210);
+  --overlay: rgba(227, 101, 79, 0.3);
 }
 
 code {

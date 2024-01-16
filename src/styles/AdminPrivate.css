@@ -3,8 +3,8 @@
   color: var(--contrast);
   font-family: "Gabarito", sans-serif;
   margin-top: 70px;
+  padding: 20px;
   height: auto;
-  padding: 30px;
 }
 
 .admin-button {
@@ -12,6 +12,8 @@
 }
 
 #joy {
-  margin: 100px;
-  color: var(--pink);
+  margin: 30px 300px 50px 300px;
+  color: var(--contrast);
+  background-color: rgba(227, 101, 79, 0.3);
+  padding: 50px;
 }
