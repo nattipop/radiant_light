@@ -56,7 +56,7 @@ const Portfolio = () => {
       {renderColors()}
     </div>
   ) : (
-    <img src="https://i.stack.imgur.com/ATB3o.gif" alt="" width="400px" />
+    <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />
   )
 }
 

@@ -23,11 +23,13 @@
 
 #mts-title {
   font-size: 40px;
-  background-color: var(--overlay);
+  background-color: var(--pink);
   padding: 5px 0px;
   width: 350px;
   text-align: center;
   margin-bottom: 30px;
+  margin-left: -100px;
+  color: var(--light-tan);
 }
 
 #mts-desc {

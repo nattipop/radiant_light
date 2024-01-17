@@ -59,23 +59,27 @@ const AdminServices = () => {
   }
 
   return services ? (
-    <div id="admin-services" className="row container">
-      <div>
-        <Link to="/admin-private/services/new"><button className="button-style">+ Add new service</button></Link>
-      </div>
-      <div id="confirm-div">
-        <p>Are you sure you want to delete service {flaggedService}?</p>
-        <div className="buttons-div">
-          <button id="yes" className="button-style" onClick={deleteService}>Yes</button>
-          <button id="cancel" className="button-style" onClick={() => {
-            document.getElementById("confirm-div").style.display = "none";
-          }}>Cancel</button>
+    <div id="admin-services">
+      <div className="row container">
+        <div>
+          <Link to="/admin-private/services/new"><button className="button-style">+ Add new service</button></Link>
         </div>
+        <div id="confirm-div">
+          <p>Are you sure you want to delete service {flaggedService}?</p>
+          <div className="buttons-div">
+            <button id="yes" className="button-style" onClick={deleteService}>Yes</button>
+            <button id="cancel" className="button-style" onClick={() => {
+              document.getElementById("confirm-div").style.display = "none";
+            }}>Cancel</button>
+          </div>
+        </div>
+        {renderServices()}
       </div>
-      {renderServices()}
     </div>
   ) : (
-    <div>No Services</div>
+    <div id="loading">
+      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" width="500px" />
+    </div>
   )
 };
 

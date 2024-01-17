@@ -12,8 +12,14 @@
 }
 
 #joy {
-  margin: 30px 300px 50px 300px;
-  color: var(--contrast);
-  background-color: rgba(227, 101, 79, 0.3);
+  /* margin: 30px 300px 50px 300px; */
+  color: var(--teal);
+  background-color: var(--light-teal);
   padding: 50px;
+  font-family: "Gabarito", sans-serif;
+}
+
+#joy-background {
+  background-color: var(--contrast);
+  margin-bottom: -10px;
 }

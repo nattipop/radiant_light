@@ -59,23 +59,27 @@ const AdminPhotos = () => {
   }
 
   return photos ? (
-    <div id="admin-photos" className="row container">
-      <div>
-        <Link to="/admin-private/photos/new"><button className="button-style">+ Add new photo</button></Link>
-      </div>
-      <div id="confirm-div">
-        <p>Are you sure you want to delete photo {flaggedPhoto}?</p>
-        <div className="buttons-div">
-          <button id="yes" className="button-style" onClick={deletePhoto}>Yes</button>
-          <button id="cancel" className="button-style" onClick={() => {
-            document.getElementById("confirm-div").style.display = "none";
-          }}>Cancel</button>
+    <div id="admin-photos">
+      <div className="row container">
+        <div>
+          <Link to="/admin-private/photos/new"><button className="button-style">+ Add new photo</button></Link>
         </div>
+        <div id="confirm-div">
+          <p>Are you sure you want to delete photo {flaggedPhoto}?</p>
+          <div className="buttons-div">
+            <button id="yes" className="button-style" onClick={deletePhoto}>Yes</button>
+            <button id="cancel" className="button-style" onClick={() => {
+              document.getElementById("confirm-div").style.display = "none";
+            }}>Cancel</button>
+          </div>
+        </div>
+        {renderPhotos()}
       </div>
-      {renderPhotos()}
     </div>
   ) : (
-    <div>No Photos</div>
+    <div id="loading">
+      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" width="500px" />
+    </div>
   )
 };
 

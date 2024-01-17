@@ -54,7 +54,7 @@ const AdminPrivate = () => {
           <Route path="/photos/edit/:photoId" element={<EditPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
       </Routes>
-      <div>
+      <div id="joy-background">
         <h1 id="joy">{joy}</h1>
       </div>
     </div>

@@ -43,6 +43,20 @@ body {
   padding-right: 0.5rem;
 }
 
+#loading {
+  background-color: var(--contrast);
+  width: 100%;
+  padding: 100px;
+}
+
+#main-loading {
+  background-color: rgba(36, 35, 35);
+  padding: 50px;
+  width: 600px;
+  margin: 200px;
+  border-radius: 50px;
+}
+
 /* 2XL */
 @media (max-width: 1536px) {
   .container {

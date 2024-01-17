@@ -2,8 +2,9 @@
   margin-top: 73px;
   width: 100vw;
   height: auto;
-  color: var(--light-teal);
+  color: var(--contrast);
   font-size: 30px;
+  font-family: "Gabarito", sans-serif;
 }
 
 #service-list {
@@ -16,4 +17,20 @@
   margin: 20px;
   padding: 20px;
   min-width: 200px;
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.service-header {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.service-description {
+  font-size: 15px;
+}
+
+.service-price {
+  font-size: 15px;
+  color: var(--pink);
 }

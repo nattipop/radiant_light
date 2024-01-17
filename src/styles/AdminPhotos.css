@@ -1,5 +1,5 @@
 #admin-photos {
-  background-color: var(--light-tan);
+  background-color: var(--contrast);
   height: auto;
 }
 
@@ -22,13 +22,15 @@
 }
 
 .photo-box {
-  border: 0.1px var(--contrast) solid;
+  border: 0.1px var(--light-teal) solid;
   padding: 5px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--light-tan);
+  border-radius: 5px;
 }
 
 .buttons-box {
