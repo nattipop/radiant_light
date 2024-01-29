@@ -1,4 +1,36 @@
 #admin-events {
-  background-color: var(--light-teal);
+  background-color: var(--contrast);
+  height: auto;
+  font-family: "Gabarito", sans-serif;
+}
+
+.buttons-box {
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.event-header {
+  font-size: 30px;
+  margin-top: 30px;
+  color: var(--light-teal);
+}
+
+.event-title {
+  font-family: "Gabarito", sans-serif;
+  background-color: rgba(255, 255, 255, 0.56);
+  margin: 0px;
+}
+
+.event-info {
+  font-family: "Gabarito", sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.56);
+  padding: 20px;
+}
+
+.event-box {
+  max-width: 400px;
+  min-width: 400px;
+  margin: 30px;
   height: auto;
 }

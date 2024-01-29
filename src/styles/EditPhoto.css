@@ -6,7 +6,12 @@
   float: right;
 }
 
-#current-price {
+.current-price {
   padding: 0px;
   margin-bottom: 3px;
+}
+
+#description-input {
+  height: 200px;
+  width: 300px;
 }

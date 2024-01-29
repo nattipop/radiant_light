@@ -1,7 +1,6 @@
 #home {
   margin-top: 73px;
   width: 100vw;
-  height: 800px;
   color: var(--teal);
   font-size: 30px;
 }
@@ -25,4 +24,33 @@
   height: 500px;
   padding: 100px;
   background-color: var(--overlay);
+}
+
+#animated-logo:hover {
+  cursor: pointer;
+}
+
+#home-event-section {
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-event-box {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 30px;
+}
+
+.event-home-title {
+  font-size: 20px;
+  font-family: "Gabarito", sans-serif;
+}
+
+.event-home-info {
+  font-size: 16px;
+  font-family: "Gabarito", sans-serif;
+  margin: 0px;
 }

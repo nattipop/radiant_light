@@ -11,6 +11,8 @@ import NewService from "./NewService";
 import EditService from "./EditService";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import NewEvent from "./NewEvent";
+import EditEvent from "./EditEvent";
 
 const AdminPrivate = () => {
   const [joy, setJoy] = useState();
@@ -53,6 +55,8 @@ const AdminPrivate = () => {
           <Route path="/photos/new" element={<NewPhoto />} />
           <Route path="/photos/edit/:photoId" element={<EditPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
+          <Route path="/events/new" element={<NewEvent />} />
+          <Route path="/events/edit/:eventId" element={<EditEvent />} />
       </Routes>
       <div id="joy-background">
         <h1 id="joy">{joy}</h1>
