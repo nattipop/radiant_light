@@ -1,14 +1,70 @@
 #portfolio {
   margin-top: 73px;
   width: 100vw;
-  height: autopx;
+  height: auto;
   color: var(--pink);
   font-size: 30px;
   padding: 30px;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .gallery-img {
   height: 250px;
   width: 220px;
   object-fit: cover;
+  margin: 10px;
+}
+
+#wedding-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#wedding-display-col {
+  float: right;
+}
+
+#wedding-main-photo {
+  height: 550px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+#wedding-title {
+  position: absolute;
+  font-size: 40px;
+  left: calc(100vw / 3);
+  top: 170px;
+  background-color: var(--pink);
+  color: var(--light-tan);
+  padding: 0px 5px;
+}
+
+#colors-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#colors-display-col {
+  float: right;
+}
+
+#colors-main-photo {
+  height: 550px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+#colors-title {
+  position: absolute;
+  font-size: 40px;
+  left: calc(100vw / 1.9);
+  top: 800px;
+  background-color: var(--pink);
+  color: var(--light-tan);
+  padding: 0px 5px;
 }

@@ -1,5 +1,20 @@
 #footer {
-  text-align: center;
+  text-align: left;
   background-color: var(--light-teal);
-  height: 200px;
+  height: auto;
+  padding: 50px;
+}
+
+.footer-contact {
+  font-size: 20px;
+  color: var(--teal);
+}
+
+.footer-img {
+  margin-right: 20px;
+}
+
+.icon-attribute {
+  color: var(--teal) !important;
+  font-size: 12px;
 }

@@ -32,7 +32,7 @@ const Portfolio = () => {
   }, []);
 
   const renderWeddings = () => {
-    return weddingsData.map(photo => {
+    return weddingsData.filter((photo, idx) => idx < 4).map(photo => {
       return (
         <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
@@ -41,7 +41,7 @@ const Portfolio = () => {
 
   const renderColors = () => {
     console.log(colorsData)
-    return colorsData.map(photo => {
+    return colorsData.filter((photo, idx) => idx < 4).map(photo => {
       return (
         <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
@@ -50,10 +50,24 @@ const Portfolio = () => {
 
   return weddingsData && colorsData ? (
     <div id="portfolio">
-      <h1 className="julius-so">Weddings</h1>
-      {renderWeddings()}
-      <h1 className="julius-so">Colors</h1>
-      {renderColors()}
+      <div className="row" id="wedding-row">
+        <div className="col" id="wedding-display-col">
+          <h1 id="wedding-title">Weddings</h1>
+          <img id="wedding-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3905_e7f9vd.jpg" alt="" width="450px" />
+        </div>
+        <div className="col" id="wedding-photos-col">
+          {renderWeddings()}
+        </div>
+      </div>
+      <div className="row" id="colors-row">
+        <div className="col" id="colors-photos-col">
+          {renderColors()}
+        </div>
+        <div className="col" id="colors-display-col">
+          <h1 id="colors-title">Colors</h1>
+          <img id="colors-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1706713452/IMG_6728_w3e7nc.jpg" alt="" width="450px" />
+        </div>
+      </div>
     </div>
   ) : (
     <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />

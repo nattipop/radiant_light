@@ -46,7 +46,7 @@ const Home = () => {
   }
 
   return (
-    <div id="home" className="julius-so">
+    <div id="home">
       <div className="home-header">
         <img className="home-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1700670304/IMG_4476_grrbmf.jpg" width="100%" alt="" />
         <div className="home-overlay">

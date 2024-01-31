@@ -32,7 +32,7 @@ const NewService = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container" id="edit-photo">
       <button id="back-button" className="button-style" onClick={() => navigate("/admin-private/services")}>Back</button>
       <form id="photo-form">
         <h3>New Service</h3>

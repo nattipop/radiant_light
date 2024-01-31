@@ -58,7 +58,7 @@ const NewEvent = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container" id="edit-photo">
     <button id="back-button" className="button-style" onClick={() => navigate("/admin-private/events")}>Back</button>
     <div className="row">
       <form id="photo-form" className="col">

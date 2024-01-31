@@ -32,7 +32,7 @@ const NewPhoto = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container" id="edit-photo">
       <button id="back-button" className="button-style" onClick={() => navigate("/admin-private/photos")}>Back</button>
       <form id="photo-form">
         <h3>New Photo</h3>

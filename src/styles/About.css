@@ -4,6 +4,7 @@
   height: auto;
   color: var(--contrast);
   font-size: 30px;
+  padding: 50px;
 }
 
 #mts-img {
@@ -30,6 +31,7 @@
   margin-bottom: 30px;
   margin-left: -100px;
   color: var(--light-tan);
+  font-family: "Julius Sans One", sans-serif;
 }
 
 #mts-desc {

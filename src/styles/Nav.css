@@ -21,11 +21,6 @@ nav {
 
 .nav-li {
   padding: 0px 20px;
-}
-
-.nav-li h3 {
-  color: var(--contrast);
-  font-size: 18px;
   background-image: linear-gradient(var(--teal), var(--teal));
   background-size: 0% 0.1em;
   background-position-x: 0%;
@@ -34,13 +29,18 @@ nav {
   transition: background-size 0.2s ease-in-out;
 }
 
+.nav-li h3 {
+  color: var(--contrast);
+  font-size: 18px;
+}
+
 .nav-li:hover {
   cursor: pointer;
 }
 
-.nav-li h3:hover,
-.nav-li h3:focus,
-.nav-li h3:active {
+.nav-li:hover,
+.nav-li:focus,
+.nav-li:active {
   background-size: 100% 0.1em;
 }
 
@@ -55,11 +55,13 @@ nav {
   float: right;
   min-width: 156px;
   max-height: 44px;
+  font-family: "Gabarito", sans-serif;
 }
 
 #cta-button:hover {
-  box-shadow: 1px 1px var(--light-teal);
-  background-color: var(--light-teal);
+  box-shadow: 1px 1px var(--pink);
+  background-color: var(--light-tan);
+  color: var(--pink);
 }
 
 #nav-logo {

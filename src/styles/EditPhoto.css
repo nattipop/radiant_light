@@ -1,5 +1,5 @@
 #edit-photo {
-  background-color: var(--light-teal);
+  padding: 100px;
 }
 
 #image-display {
@@ -14,4 +14,18 @@
 #description-input {
   height: 200px;
   width: 300px;
+}
+
+#url-input {
+  width: 300px;
+}
+
+#back-button {
+  width: 48px;
+  position: absolute;
+  left: 100px;
+}
+
+#edit-img-div {
+  max-width: 400px;
 }

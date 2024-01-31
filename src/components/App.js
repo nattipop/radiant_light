@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router';
 import '../styles/App.css';
 import AuthOutlet from '@auth-kit/react-router/AuthOutlet'
-import Mockup from './Mockup';
 import PageNotFound from './PageNotFound';
 import Nav from './Nav';
 import About from './About';
@@ -18,8 +17,7 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" element={<Mockup />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/meet-the-stylist" element={<About />} />
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/services" element={<Services />} />

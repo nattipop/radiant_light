@@ -53,7 +53,7 @@ const EditService = () => {
   }
 
   return service ? (
-    <div className="container">
+    <div className="container" id="edit-photo">
     <button id="back-button" className="button-style" onClick={() => navigate("/admin-private/services")}>Back</button>
     <div className="row">
       <form id="photo-form" className="col">

@@ -35,7 +35,7 @@ const AdminPrivate = () => {
 
   const logout = () => {
     signout();
-    navigate("/home");
+    navigate("/");
   }
 
   return (

@@ -60,9 +60,9 @@ const AdminPhotos = () => {
 
   return photos ? (
     <div id="admin-photos">
-      <div className="row container">
+      <div className="row container" id="admin-row">
         <div>
-          <Link to="/admin-private/photos/new"><button className="button-style">+ Add new photo</button></Link>
+          <Link to="/admin-private/photos/new"><button className="button-style" id="add-new">+ Add new photo</button></Link>
         </div>
         <div id="confirm-div">
           <p>Are you sure you want to delete photo {flaggedPhoto}?</p>

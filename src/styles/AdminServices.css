@@ -1,6 +1,7 @@
 #admin-services {
-  background-color: var(--contrast);
+  background-color: var(--teal);
   height: auto;
+  padding: 50px 0px;
 }
 
 .service-title {
@@ -18,4 +19,6 @@
   min-width: 200px;
   background-color: var(--light-tan);
   border-radius: 5px;
+  box-shadow: 2px 2px rgba(36, 35, 35, 0.779), 1px 1px rgba(36, 35, 35, 0.379);
+  max-width: 232px;
 }

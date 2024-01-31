@@ -10,6 +10,7 @@ const Admin = () => {
   const navigate = useNavigate();
   const [usernameValue, setUsernameValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
+  const [loading, setLoading] = useState(false);
   console.log(usernameValue, passwordValue)
 
   const onFormSubmit = async (e) => {
@@ -21,6 +22,7 @@ const Admin = () => {
     setError("");
 
     try {
+      setLoading(true);
       const response = await axios.post("https://radiant-light-server-b649d90c9bb7.herokuapp.com/login", values);
 
       if(signin({
@@ -33,6 +35,7 @@ const Admin = () => {
         }
       })){
         navigate("/admin-private");
+        setLoading(false);
         setUsernameValue("");
         setPasswordValue("");
       };
@@ -49,7 +52,11 @@ const Admin = () => {
     }
   }
 
-  return (
+  return loading ? (
+    <div id="admin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="" width="300px" />
+    </div>
+  ) : (
     <div id="admin">
       <form>
         <div className="form-flex">

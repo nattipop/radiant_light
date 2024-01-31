@@ -53,10 +53,10 @@ const EditPhoto = () => {
   }
 
   return photo ? (
-    <div className="container">
+    <div className="container" id="edit-photo">
     <button id="back-button" className="button-style" onClick={() => navigate("/admin-private/photos")}>Back</button>
     <div className="row">
-      <div className="col"><img id="image-display" src={photo.url} alt="" width="300px" /></div>
+      <div className="col" id="edit-img-div"><img id="image-display" src={photo.url} alt="" width="300px" /></div>
       <form id="photo-form" className="col">
         <h3>Edit Photo</h3>
         <input onChange={e => setNewTitle(e.target.value)} id="title-input" className="form-inputs" title="title" placeholder="Title" defaultValue={photo.title} type=""/>

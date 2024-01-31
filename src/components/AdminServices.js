@@ -60,9 +60,9 @@ const AdminServices = () => {
 
   return services ? (
     <div id="admin-services">
-      <div className="row container">
+      <div className="row container" id="admin-row">
         <div>
-          <Link to="/admin-private/services/new"><button className="button-style">+ Add new service</button></Link>
+          <Link to="/admin-private/services/new"><button className="button-style" id="add-new">+ Add new service</button></Link>
         </div>
         <div id="confirm-div">
           <p>Are you sure you want to delete service {flaggedService}?</p>

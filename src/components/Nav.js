@@ -12,7 +12,7 @@ const Nav = () => {
     pages.forEach(item => item.classList.remove("current-page"));
 
     switch (location.pathname) {
-      case "/home":
+      case "/":
         document.getElementById("home-link").classList.add("current-page");
         break;
       case "/meet-the-stylist":
@@ -42,7 +42,7 @@ const Nav = () => {
        </div>
       <ul id="nav-ul">
         <li aria-current="page" id="home-link" className="nav-li raleway">
-          <h3><Link to="/home">Home</Link></h3>
+          <h3><Link to="/">Home</Link></h3>
         </li>
         <li aria-current="page" id="about-link" className="nav-li raleway">
           <h3><Link to="/meet-the-stylist">About</Link></h3>
@@ -64,7 +64,7 @@ const Nav = () => {
         </li>
       </ul>
       <div>
-        <button id="cta-button" className="raleway">Call: (715) 736-9006</button>
+        <button id="cta-button">Call: (715) 642-3151</button>
       </div>
     </nav>
   )
