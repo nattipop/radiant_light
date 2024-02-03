@@ -59,7 +59,7 @@ const EditService = () => {
       <form id="photo-form" className="col">
         <h3>Edit Service</h3>
         <input onChange={e => setNewTitle(e.target.value)} id="title-input" className="form-inputs" title="title" placeholder="Title" defaultValue={service.title} type=""/>
-        <input onChange={e => setNewDesc(e.target.value)} id="description-input" className="form-inputs" title="description" placeholder="Description" type="text" defaultValue={service.description}/>
+        <textarea onChange={e => setNewDesc(e.target.value)} id="description-input" className="form-inputs" title="description" placeholder="Description" type="text" defaultValue={service.description}/>
         <input onChange={e => setNewPictureUrl(e.target.value)} id="url-input" className="form-inputs" title="url" placeholder="Picture Url" type="url" defaultValue={service.picture_url}/>
         <p className="current-price">Current Price: {service.price}</p>
         <input onChange={e => setNewPrice(e.target.value)} id="price-input" className="form-inputs" title="price" placeholder="$ Price" type="number"/>

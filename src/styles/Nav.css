@@ -6,7 +6,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: var(--teal);
-  z-index: 2;
+  z-index: 20;
 }
 
 #nav-ul {

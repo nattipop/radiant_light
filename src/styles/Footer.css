@@ -10,6 +10,11 @@
   color: var(--teal);
 }
 
+.footer-contact a {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
 .footer-img {
   margin-right: 20px;
 }

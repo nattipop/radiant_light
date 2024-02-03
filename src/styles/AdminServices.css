@@ -8,6 +8,12 @@
   font-size: 30px;
 }
 
+.admin-service-display-image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
 .service-box {
   border: 0.1px var(--light-teal) solid;
   padding: 5px;

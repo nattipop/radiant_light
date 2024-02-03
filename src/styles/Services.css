@@ -5,20 +5,70 @@
   color: var(--contrast);
   font-size: 30px;
   font-family: "Gabarito", sans-serif;
+  animation: fancy-scroll 5s scroll ease-in-out none;
 }
 
 #service-list {
   list-style: none;
+  z-index: 12;
+  padding: 50px 50px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#services-hero-img {
+  height: 400px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#services-hero-text {
+  position: absolute;
+  text-align: left;
+  background-color: var(--overlay);
+  padding: 200px 100px 113px 100px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#services-hero-text h1 {
+  color: var(--light-tan);
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 50px;
+}
+
+#services-hero-text p {
+  color: var(--light-tan);
+  padding: 0px;
+  margin: 0px;
+}
+
+#services-hero-text a {
+  color: var(--pink);
+  text-decoration: underline 2px solid;
 }
 
 .service-li {
   color: var(--contrast);
-  background-color: white;
-  margin: 20px;
+  background-color: var(--light-tan);
   padding: 20px;
-  min-width: 200px;
-  max-width: 250px;
-  border-radius: 5px;
+  outline: 1px var(--contrast) solid;
+  border-radius: 2px;
+  max-width: calc((100% / 2) - 10px);
+  min-width: calc((100% / 2) - 10px);
+}
+
+.service-display-picture {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.service-header-column {
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .service-header {
@@ -28,9 +78,12 @@
 
 .service-description {
   font-size: 15px;
+  text-align: left;
+  padding: 10px;
 }
 
 .service-price {
   font-size: 15px;
   color: var(--pink);
+  text-align: right;
 }

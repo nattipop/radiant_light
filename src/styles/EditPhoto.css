@@ -14,6 +14,7 @@
 #description-input {
   height: 200px;
   width: 300px;
+  text-align: left;
 }
 
 #url-input {
