@@ -18,7 +18,7 @@ const About = () => {
     and their faces shall never be ashamed."</h3>
           <h3>Psalm 34:5</h3>
         </div>
-        <div className="col about-image-div">
+        <div className="col about-image-div" id="about-fade-div">
           <div className="about-image" id="about-image-two"></div>
         </div>
       </div>

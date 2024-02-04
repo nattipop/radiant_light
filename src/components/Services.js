@@ -28,7 +28,7 @@ const Services = () => {
       return (
         <li id={service.service_id} key={service.service_id} className="service-li col">
           <div className="row">
-            <div className="col-3">
+            <div className="col-3 photo-column">
               <img src={service.picture_url} alt="" className="service-display-picture" />
             </div>
             <div className="col service-header-column">
@@ -44,11 +44,17 @@ const Services = () => {
 
   return data ? (
     <div id="services">
-      <img id="services-hero-img" src="https://res.cloudinary.com/dawteptkh/image/upload/c_fill,h_500,q_auto:best,w_1300/v1706797807/IMG_2637_2_wmib0l.png" alt="" width="100%" />
+      <div className="row" id="service-header-row">
+        <div className="col service-image-div" id="fade-col-div">
+          <div className="service-image" id="service-image-fade"></div>
+        </div>
+        <div className="col service-image-div">
+          <div className="service-image" id="service-image-one"></div>
+        </div>
+      </div>
       <div id="services-hero-text">
         <h1>Services</h1>
-        <p>Listed below are the services I offer at Radiant Light</p>
-        <p>If you're looking to book, check out my glossgenius <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></p>
+        <h3>If you're looking to book, check out my <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
       </div>
       <ul id="service-list" className="container row">
         {renderServices()}
@@ -56,13 +62,21 @@ const Services = () => {
     </div>
   ) : (
     <div id="services">
-      <img id="services-hero-img" src="https://res.cloudinary.com/dawteptkh/image/upload/c_fill,h_500,q_auto:best,w_1300/v1706797807/IMG_2637_2_wmib0l.png" alt="" width="100%" />
+      <div className="row" id="service-header-row">
+        <div className="col service-image-div">
+          <div id="service-image-fade"></div>
+        </div>
+        <div className="col service-image-div">
+          <div id="service-image-one"></div>
+        </div>
+      </div>
       <div id="services-hero-text">
         <h1>Services</h1>
-        <h3>Listed below are the services I offer at Radiant Light</h3>
         <h3>If you're looking to book, check out my glossgenius <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
       </div>
-      <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />
+      <ul id="service-list" className="container row">
+        <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />
+      </ul>
     </div>
   )
 }
