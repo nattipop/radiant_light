@@ -3,6 +3,7 @@
   background-color: var(--light-teal);
   height: auto;
   padding: 50px;
+  width: 100%;
 }
 
 .footer-contact {

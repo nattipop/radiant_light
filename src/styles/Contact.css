@@ -1,7 +1,16 @@
 #contact {
   margin-top: 73px;
   width: 100vw;
-  height: 800px;
   color: var(--contrast);
   font-size: 30px;
+  font-family: "Gabarito", sans-serif;
+}
+
+#contact-body {
+  background-color: var(--light-tan);
+  position: relative;
+  z-index: 15;
+  margin-top: -100px;
+  height: auto;
+  padding: 100px;
 }

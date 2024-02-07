@@ -1,16 +1,18 @@
 #home {
   margin-top: 73px;
   width: 100vw;
-  color: var(--teal);
+  color: var(--contrast);
   font-size: 30px;
   font-family: "Julius Sans One", sans-serif;
 }
 
 .home-header {
   width: 100vw;
-  height: 500px;
+  height: 440px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .home-image {
@@ -43,6 +45,9 @@
   min-width: 300px;
   max-width: 300px;
   margin: 30px;
+  border: 1px solid var(--contrast);
+  padding: 20px;
+  border-radius: 2px;
 }
 
 .event-home-title {
@@ -54,4 +59,118 @@
   font-size: 16px;
   font-family: "Gabarito", sans-serif;
   margin: 0px;
+}
+
+a.event-home-info {
+  color: var(--pink) !important;
+}
+
+a.event-home-info:hover {
+  text-decoration: underline;
+}
+
+#location-map {
+  background-color: var(--light-teal);
+  position: relative;
+  z-index: 15;
+}
+
+#address-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address {
+  font-family: "Gabarito", sans-serif;
+  color: var(--contrast);
+  text-decoration: underline;
+  margin: auto;
+  width: 150px;
+}
+
+.address:hover {
+  color: var(--teal);
+  cursor: pointer;
+}
+
+#address-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 100px;
+}
+
+#location-icon {
+  min-width: 64px;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+/* Single Event Styling */
+#single-event {
+  margin-top: 73px;
+}
+
+#se-hero {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+/* 2XL */
+@media (max-width: 1536px) {
+}
+
+/* XL */
+@media (max-width: 1288px) {
+}
+
+/* L */
+@media (max-width: 1024px) {
+  #animated-logo {
+    width: 300px;
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  #iframe-col {
+    min-width: 100%;
+  }
+}
+
+/* M */
+@media (max-width: 768px) {
+}
+
+/* S */
+@media (max-width: 640px) {
+  #address-div {
+    padding: 20px;
+  }
+}
+
+/* XS */
+@media (max-width: 490px) {
+  .home-overlay {
+    padding: 100px 5vw;
+  }
+}
+
+@media (max-width: 340px) {
+  #animated-logo {
+    width: 200px;
+  }
+
+  .home-image {
+    height: 250px;
+  }
+
+  .home-overlay {
+    top: -330px;
+  }
+
+  #location-map {
+    top: -190px;
+  }
 }

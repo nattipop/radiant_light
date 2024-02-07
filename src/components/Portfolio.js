@@ -64,13 +64,32 @@ const Portfolio = () => {
           {renderColors()}
         </div>
         <div className="col" id="colors-display-col">
-          <h1 id="colors-title">Colors</h1>
           <img id="colors-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1706713452/IMG_6728_w3e7nc.jpg" alt="" width="450px" />
+          <h1 id="colors-title">Colors</h1>
         </div>
       </div>
     </div>
   ) : (
-    <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />
+    <div id="portfolio">
+      <div className="row" id="wedding-row">
+        <div className="col" id="wedding-display-col">
+          <h1 id="wedding-title">Weddings</h1>
+          <img id="wedding-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3905_e7f9vd.jpg" alt="" width="450px" />
+        </div>
+        <div className="col" id="wedding-photos-col">
+        <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
+        </div>
+      </div>
+      <div className="row" id="colors-row">
+        <div className="col" id="colors-photos-col">
+          <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
+        </div>
+        <div className="col" id="colors-display-col">
+          <img id="colors-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1706713452/IMG_6728_w3e7nc.jpg" alt="" width="450px" />
+          <h1 id="colors-title">Colors</h1>
+        </div>
+      </div>
+    </div>
   )
 }
 

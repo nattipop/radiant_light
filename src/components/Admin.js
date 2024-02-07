@@ -54,7 +54,7 @@ const Admin = () => {
 
   return loading ? (
     <div id="admin">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="" width="300px" />
+      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" width="300px" />
     </div>
   ) : (
     <div id="admin">

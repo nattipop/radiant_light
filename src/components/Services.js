@@ -75,7 +75,7 @@ const Services = () => {
         <h3>If you're looking to book, check out my glossgenius <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
       </div>
       <ul id="service-list" className="container row">
-        <img id="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" />
+        <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
       </ul>
     </div>
   )

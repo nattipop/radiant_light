@@ -115,7 +115,7 @@ const AdminEvents = () => {
     </div>
   ) : (
     <div id="loading">
-      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif" alt="" width="500px" />
+      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" width="500px" />
     </div>
   )
 };

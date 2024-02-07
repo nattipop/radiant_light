@@ -9,22 +9,38 @@ nav {
   z-index: 20;
 }
 
+#nav-small {
+  padding: 200px 100px 100px 100px;
+  position: static;
+  font-family: "Gabarito", sans-serif;
+}
+
+#nav-small ul {
+  list-style: none;
+}
+
+.nav-small-li {
+  margin: 20px;
+  text-decoration: underline var(--light-tan);
+  font-size: 25px;
+}
+
 #nav-ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 75px;
   margin: 0px;
   width: 70vw;
 }
 
 .nav-li {
-  padding: 0px 20px;
-  background-image: linear-gradient(var(--teal), var(--teal));
-  background-size: 0% 0.1em;
-  background-position-x: 0%;
-  background-position-y: 104%;
+  margin: 0px 20px;
+  background-image: linear-gradient(var(--pink), var(--pink));
+  background-size: 0% 0.13em;
+  background-position-x: 0px;
+  background-position-y: 20px;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
@@ -32,6 +48,7 @@ nav {
 .nav-li h3 {
   color: var(--contrast);
   font-size: 18px;
+  font-family: "Gabarito", sans-serif;
 }
 
 .nav-li:hover {
@@ -41,13 +58,12 @@ nav {
 .nav-li:hover,
 .nav-li:focus,
 .nav-li:active {
-  background-size: 100% 0.1em;
+  background-size: 100% 0.13em;
 }
 
 #cta-button {
   background-color: var(--pink);
   color: white;
-  box-shadow: 2px 2px var(--teal);
   outline: none;
   border: none;
   border-radius: 4px;
@@ -56,6 +72,9 @@ nav {
   min-width: 156px;
   max-height: 44px;
   font-family: "Gabarito", sans-serif;
+  position: fixed;
+  top: 15px;
+  left: calc(100vw - 166px);
 }
 
 #cta-button:hover {
@@ -66,9 +85,41 @@ nav {
 
 #nav-logo {
   margin: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+#hamburger-dropdown {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  padding: 10px;
+  transition: padding ease-in-out 0.2s;
+  display: none;
+  position: absolute;
+  z-index: 25;
+  top: 0px;
+  left: calc(100vw - 74px);
+}
+
+#hamburger-dropdown:hover {
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 12px;
+}
+
+@media (max-width: 1024px) {
+  #hamburger-dropdown {
+    display: block;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
 }

@@ -31,7 +31,7 @@ body {
 }
 
 .current-page h3 {
-  text-decoration: underline var(--teal) 2px;
+  text-decoration: underline var(--pink) 2px;
   text-underline-offset: 3px;
 }
 
@@ -44,17 +44,11 @@ body {
 }
 
 #loading {
-  background-color: var(--contrast);
-  width: 100%;
   padding: 100px;
 }
 
-#main-loading {
-  background-color: rgba(36, 35, 35);
-  padding: 50px;
-  width: 600px;
-  margin: 200px;
-  border-radius: 50px;
+.main-loading {
+  width: 500px;
 }
 
 /* 2XL */
@@ -75,6 +69,9 @@ body {
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
+  }
+  .App {
+    margin-top: -100px;
   }
 }
 

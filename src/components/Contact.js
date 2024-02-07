@@ -20,6 +20,20 @@ const Contact = () => {
       <div id="services-hero-text">
         <h1>Contact</h1>
       </div>
+      <div id="contact-body" className="row">
+        <div className="col">
+          <h1>Phone:</h1>
+          <p>(715) 642-3151</p>
+        </div>
+        <div className="col">
+          <h1>Email:</h1>
+          <p>radiantlighthd@gmail.com</p>
+        </div>
+        <div className="col">
+          <h1>Instagram:</h1>
+          <p>@radiantlighthairdesign</p>
+        </div>
+      </div>
     </div>
   )
 }

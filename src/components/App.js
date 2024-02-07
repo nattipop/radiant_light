@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router';
 import '../styles/App.css';
-import AuthOutlet from '@auth-kit/react-router/AuthOutlet'
+import AuthOutlet from '@auth-kit/react-router/AuthOutlet';
+import Event from './Event';
 import PageNotFound from './PageNotFound';
 import Nav from './Nav';
 import About from './About';
@@ -11,13 +12,18 @@ import Services from './Services';
 import Footer from './Footer';
 import Admin from './Admin';
 import AdminPrivate from './AdminPrivate';
+import NavSmall from './NavSmall';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <Link to="/navigate"><img src="https://res.cloudinary.com/dawteptkh/image/upload/v1707089842/settings_wtplpv.png" alt="" id="hamburger-dropdown" /></Link>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/event/:eventId" element={<Event />} />
+        <Route path="/navigate" element={<NavSmall />} />
         <Route path="/meet-the-stylist" element={<About />} />
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/services" element={<Services />} />
