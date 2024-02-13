@@ -80,12 +80,12 @@ const Home = () => {
               loading="async"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDeq9ZDHk_5yIu_upHgfurpt4eQM3UF0EE&q=1+S+Main+St,Rice+Lake+WI">
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDeq9ZDHk_5yIu_upHgfurpt4eQM3UF0EE&q=Radiant+Light+Hair+Design,Rice+Lake,WI">
             </iframe>
           </div>
           <div id="address-col" className="col-4">
             <img id="location-icon" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707264514/location_dzsdpz.png" alt="" width="64px" />
-            <a href="https://www.google.com/maps/place/1+S+Main+St,+Rice+Lake,+WI+54868/@45.5015508,-91.7357139,17z/data=!3m1!4b1!4m6!3m5!1s0x52acfa3b229343cf:0xf0b9f01d6184a393!8m2!3d45.5015471!4d-91.733139!16s%2Fg%2F11bw3ygrn1?entry=ttu"><h3 className="address">1 S Main St Rice Lake, WI 54868</h3></a>
+            <a href="https://www.google.com/maps/place/Radiant+Light+Hair+Design/@45.5015508,-91.7357139,17z/data=!3m1!4b1!4m6!3m5!1s0x52acfbd9c7c63e37:0xea92cb26d0b2664d!8m2!3d45.5015471!4d-91.733139!16s%2Fg%2F11vbcltj_g?entry=ttu"><h3 className="address">1 S Main St Rice Lake, WI 54868</h3></a>
           </div>
         </div>
       </div>
