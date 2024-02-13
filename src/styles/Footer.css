@@ -1,9 +1,17 @@
-#footer {
+#footer-main {
   text-align: left;
-  background-color: var(--light-teal);
   height: auto;
   padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer {
   width: 100%;
+  background-color: var(--light-teal);
+  padding-bottom: 20px;
 }
 
 .footer-contact {
@@ -20,7 +28,90 @@
   margin-right: 20px;
 }
 
-.icon-attribute {
+.vita-attribute {
   color: var(--teal) !important;
   font-size: 12px;
+  margin: 2px;
+}
+
+.copyright {
+  color: var(--teal) !important;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.hours-weekday {
+  font-size: 12px;
+  text-align: right;
+  color: var(--contrast);
+}
+
+.hours-times {
+  font-size: 12px;
+  text-align: left;
+  color: var(--contrast);
+}
+
+.footer-col {
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+#contact-col {
+  padding-right: 50px;
+}
+
+#weekday-col {
+  padding: 0px 10px 0px 50px;
+}
+
+#times-col {
+  padding: 0px 50px 0px 10px;
+}
+
+.footer-nav-link {
+  color: var(--teal);
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline;
+}
+
+#navigation-col {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  margin-top: -10px;
+}
+
+/* M */
+@media (max-width: 800px) {
+  #contact-col {
+    min-width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+/* XS */
+@media (max-width: 475px) {
+  #weekday-col {
+    padding: 0px 10px 0px 15px;
+  }
+
+  #times-col {
+    padding: 0px 15px 0px 10px;
+  }
+
+  #navigation-col {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  #footer-main {
+    padding: 15px;
+  }
 }

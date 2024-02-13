@@ -3,6 +3,7 @@ import "../styles/Admin.css"
 import axios from "axios";
 import useSignIn from 'react-auth-kit/hooks/useSignIn';
 import { useNavigate } from "react-router";
+import loadingGif from "../Bobbypin-loading.gif"
 
 const Admin = () => {
   const [error, setError] = useState("");
@@ -54,7 +55,7 @@ const Admin = () => {
 
   return loading ? (
     <div id="admin">
-      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" width="300px" />
+      <img src={loadingGif} alt="" width="300px" />
     </div>
   ) : (
     <div id="admin">

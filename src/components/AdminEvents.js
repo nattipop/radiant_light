@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/AdminEvents.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import loadingGif from "../Bobbypin-loading.gif";
 
 const AdminEvents = () => {
   const [events, setEvents] = useState();
@@ -115,7 +116,7 @@ const AdminEvents = () => {
     </div>
   ) : (
     <div id="loading">
-      <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" width="500px" />
+      <img src={loadingGif} alt="" width="500px" />
     </div>
   )
 };

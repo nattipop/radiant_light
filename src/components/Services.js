@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/Services.css";
 import axios from "axios";
+import loadingGif from "../Bobbypin-loading.gif"
 
 const Services = () => {
   const [data, setData] = useState();
@@ -63,20 +64,20 @@ const Services = () => {
   ) : (
     <div id="services">
       <div className="row" id="service-header-row">
-        <div className="col service-image-div">
-          <div id="service-image-fade"></div>
+        <div className="col service-image-div" id="fade-col-div">
+          <div className="service-image" id="service-image-fade"></div>
         </div>
         <div className="col service-image-div">
-          <div id="service-image-one"></div>
+          <div className="service-image" id="service-image-one"></div>
         </div>
       </div>
       <div id="services-hero-text">
         <h1>Services</h1>
-        <h3>If you're looking to book, check out my glossgenius <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
+        <h3>If you're looking to book, check out my <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
       </div>
-      <ul id="service-list" className="container row">
-        <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
-      </ul>
+      <div id="service-list">
+        <img src={loadingGif} id="services-loading" alt="" />
+      </div>
     </div>
   )
 }

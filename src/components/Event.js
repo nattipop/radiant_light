@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 const Event = () => {
   const { eventId } = useParams();
@@ -23,7 +24,15 @@ const Event = () => {
 
   return event ? (
     <div id="single-event">
-      <h1 id="se-hero" style={{backgroundImage: `url("${event.picture_url}")`}}>{event.title}</h1>
+      <Link to="/" id="event-back">Back</Link>
+      <div id="se-hero" style={{backgroundImage: `url("${event.picture_url}")`, backgroundPosition: "0px -500px"}}></div>
+      <div id="single-event-main">
+        <h1 id="event-title-single">{event.title}</h1>
+        <h3>{event.description}</h3>
+        <a id="event-maps-link" href={`https://www.google.com/maps/search/${event.location}`}>{event.location}</a>
+        <h3>{event.date}</h3>
+        <h3>{event.time}</h3>
+      </div>
     </div>
   ) : (
     <div id="single-event">

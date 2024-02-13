@@ -38,7 +38,7 @@ const Nav = () => {
   return (
     <nav aria-label="primary menu" id="desktop-nav">
         <div id="nav-logo">
-          <img id="nav-logo-img" src={logo} alt="" width="150px" />
+          <Link to="/"><img id="nav-logo-img" src={logo} alt="" width="150px" /></Link>
         </div>
         <ul id="nav-ul">
           <li aria-current="page" id="home-link" className="nav-li raleway">
@@ -64,7 +64,7 @@ const Nav = () => {
           </li>
         </ul>
         <div>
-          <button id="cta-button">Call: (715) 642-3151</button>
+          <a href="tel:7156423151"><button id="cta-button">Call: (715) 642-3151</button></a>
         </div>
     </nav>
   )

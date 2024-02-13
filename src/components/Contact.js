@@ -20,18 +20,20 @@ const Contact = () => {
       <div id="services-hero-text">
         <h1>Contact</h1>
       </div>
-      <div id="contact-body" className="row">
-        <div className="col">
-          <h1>Phone:</h1>
-          <p>(715) 642-3151</p>
-        </div>
-        <div className="col">
-          <h1>Email:</h1>
-          <p>radiantlighthd@gmail.com</p>
-        </div>
-        <div className="col">
-          <h1>Instagram:</h1>
-          <p>@radiantlighthairdesign</p>
+      <div id="contact-body">
+        <div className="row contact-row">
+          <div className="col contact-col">
+            <h1>Phone:</h1>
+            <p>(715) 642-3151</p>
+          </div>
+          <div className="col contact-col">
+            <h1>Email:</h1>
+            <p>radiantlighthd@gmail.com</p>
+          </div>
+          <div id="instagram-section">
+            <h1 className="instagram-header">Instagram</h1>
+            <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>
+          </div>
         </div>
       </div>
     </div>

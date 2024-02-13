@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/Portfolio.css";
 import axios from "axios";
+import loadingGif from "../Bobbypin-loading.gif";
 
 const Portfolio = () => {
   const [weddingsData, setWeddingsData] = useState();
@@ -40,7 +41,6 @@ const Portfolio = () => {
   };
 
   const renderColors = () => {
-    console.log(colorsData)
     return colorsData.filter((photo, idx) => idx < 4).map(photo => {
       return (
         <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
@@ -77,12 +77,12 @@ const Portfolio = () => {
           <img id="wedding-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3905_e7f9vd.jpg" alt="" width="450px" />
         </div>
         <div className="col" id="wedding-photos-col">
-        <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
+        <img className="main-loading" src={loadingGif} alt="" />
         </div>
       </div>
       <div className="row" id="colors-row">
         <div className="col" id="colors-photos-col">
-          <img className="main-loading" src="https://res.cloudinary.com/dawteptkh/image/upload/v1707258763/Bobbypin-loading_iuadnt.gif" alt="" />
+          <img className="main-loading" src={loadingGif} alt="" />
         </div>
         <div className="col" id="colors-display-col">
           <img id="colors-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1706713452/IMG_6728_w3e7nc.jpg" alt="" width="450px" />

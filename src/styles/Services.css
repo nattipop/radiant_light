@@ -138,6 +138,12 @@
   text-align: right;
 }
 
+#services-loading {
+  width: 100%;
+  padding: 300px;
+  margin-top: -380px;
+}
+
 /* MOBILE STYLING */
 
 /* 2XL */
@@ -179,6 +185,11 @@
     max-width: 100px;
     min-width: 100px;
   }
+
+  #services-loading {
+    padding: 200px;
+    margin-top: -280px;
+  }
 }
 
 /* M */
@@ -212,6 +223,11 @@
     max-width: 100%;
     min-width: 100%;
   }
+
+  #services-loading {
+    padding: 100px;
+    margin-top: -180px;
+  }
 }
 
 /* S */
@@ -229,6 +245,11 @@
 @media (max-width: 475px) {
   #service-list {
     padding: 20px;
+  }
+
+  #services-loading {
+    padding: 50px;
+    margin-top: -50px;
   }
 }
 

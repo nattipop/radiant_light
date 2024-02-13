@@ -41,6 +41,16 @@
   justify-content: center;
 }
 
+#home-reviews-section {
+  height: auto;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lighter-tan);
+  color: var(--pink);
+}
+
 .home-event-box {
   min-width: 300px;
   max-width: 300px;
@@ -70,7 +80,7 @@ a.event-home-info:hover {
 }
 
 #location-map {
-  background-color: var(--light-teal);
+  background-color: var(--light-tan);
   position: relative;
   z-index: 15;
 }
@@ -111,11 +121,41 @@ a.event-home-info:hover {
 /* Single Event Styling */
 #single-event {
   margin-top: 73px;
+  background-color: var(--light-tan);
 }
 
 #se-hero {
   width: 100%;
-  padding: 50px 0px;
+  padding: 100px 0px;
+}
+
+#single-event-main {
+  margin: 50px 100px;
+  outline: 1px var(--contrast) solid;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+#event-maps-link {
+  color: var(--teal);
+  font-size: 25px;
+}
+
+#event-maps-link:hover {
+  text-decoration: underline;
+}
+
+#event-back {
+  color: var(--contrast);
+  position: absolute;
+  font-family: "Gabarito", sans-serif;
+  font-size: 20px;
+  left: 10px;
+  top: 280px;
+}
+
+#event-title-single {
+  font-family: "Julius Sans One", sans-serif;
 }
 
 /* 2XL */
