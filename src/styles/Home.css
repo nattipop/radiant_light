@@ -177,16 +177,37 @@ a.event-home-info:hover {
   #iframe-col {
     min-width: 100%;
   }
+
+  #event-back {
+    top: 180px;
+  }
 }
 
 /* M */
 @media (max-width: 768px) {
+  #home-reviews-section {
+    padding: 50px;
+  }
+
+  #single-event-main {
+    margin: 50px 20px;
+  }
 }
 
 /* S */
 @media (max-width: 640px) {
   #address-div {
     padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #home-reviews-section {
+    padding: 20px 0px;
+  }
+
+  .icon-arrow-left {
+    top: 50px;
   }
 }
 
@@ -208,9 +229,5 @@ a.event-home-info:hover {
 
   .home-overlay {
     top: -330px;
-  }
-
-  #location-map {
-    top: -190px;
   }
 }
