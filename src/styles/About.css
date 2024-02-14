@@ -250,10 +250,12 @@
 
   #meet-header {
     text-align: center;
+    margin: 20px;
   }
 
   #mts-img-2 {
     float: none;
+    margin: auto;
   }
 }
 
@@ -297,21 +299,9 @@
     margin: 10px;
   }
 
-  .mts-title {
-    font-size: 30px;
-    width: 270px;
-  }
-
   .mts-desc {
     font-size: 18px;
     width: 100%;
-  }
-
-  .mts-header {
-    min-width: 400px;
-    max-width: 400px;
-    padding: 0px;
-    text-align: center;
   }
 
   #about-verse {

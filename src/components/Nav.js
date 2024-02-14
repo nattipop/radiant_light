@@ -50,9 +50,6 @@ const Nav = () => {
           <li aria-current="page" id="services-link" className="nav-li raleway">
             <h3><Link to="/services">Services</Link></h3>
           </li>
-          <li aria-current="page" className="nav-li raleway">
-            <h3><a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>Book</a></h3>
-          </li>
           <li aria-current="page" id="shop-link" className="nav-li raleway">
             <h3><Link to="https://cp.salonhq.co/radiant-light-hair-design">Shop</Link></h3>
           </li>

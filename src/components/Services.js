@@ -55,7 +55,7 @@ const Services = () => {
       </div>
       <div id="services-hero-text">
         <h1>Services</h1>
-        <h3>If you're looking to book, check out my <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>booking page</a></h3>
+        <h3>Contact me to find the best service for you!</h3>
       </div>
       <ul id="service-list" className="container row">
         {renderServices()}

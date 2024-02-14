@@ -26,13 +26,12 @@ const Footer = () => {
           <h3 className="hours-times">9am - 5pm</h3>
           <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
-          <h3 className="hours-times">Closed</h3>
+          <h3 className="hours-times">By Appt.</h3>
         </div>
         <div className="col footer-col" id="navigation-col">
           <Link to="/" className="footer-nav-link">Home</Link>
           <Link to="/meet-the-stylist" className="footer-nav-link">About</Link>
           <Link to="/services" className="footer-nav-link">Services</Link>
-          <a className="footer-nav-link" href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>Book</a>
           <Link to="/https://cp.salonhq.co/radiant-light-hair-design" className="footer-nav-link">Shop</Link>
           <Link to="/gallery" className="footer-nav-link">Gallery</Link>
           <Link to="/contact" className="footer-nav-link">Contact</Link>

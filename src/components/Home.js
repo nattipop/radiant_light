@@ -62,6 +62,9 @@ const Home = () => {
         <h1>Upcoming Events:</h1>
         {renderEvents()}
       </div>
+      <div id="home-booking-section">
+        <h3>If you are a returning client looking to book, I now have <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>online booking!</a></h3>
+      </div>
       <div id="home-reviews-section" className="row">
         <h1>Kind Words</h1>
         <rw-widget-inline data-rw-inline="39803"></rw-widget-inline>
