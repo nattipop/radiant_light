@@ -8,6 +8,14 @@
   animation: fancy-scroll 5s scroll ease-in-out none;
 }
 
+.service-cat-titles {
+  font-size: 34px;
+  font-family: "Julius Sans One", sans-serif;
+  color: var(--contrast);
+  margin: 30px;
+  z-index: 12;
+}
+
 #service-list {
   margin: -102px 0px 0px 0px;
   max-width: none;
@@ -15,7 +23,7 @@
   list-style: none;
   position: relative;
   z-index: 12;
-  padding: 80px;
+  padding: 20px 80px 80px 80px;
   column-gap: 10px;
   row-gap: 10px;
   background-color: var(--light-tan);
@@ -61,8 +69,9 @@
   padding: 20px;
   outline: 1px var(--contrast) solid;
   border-radius: 2px;
-  max-width: calc((100% / 2) - 10px);
-  min-width: calc((100% / 2) - 10px);
+  margin: 10px;
+  max-width: calc(50% - 20px);
+  min-width: calc(50% - 20px);
 }
 
 .service-display-picture {

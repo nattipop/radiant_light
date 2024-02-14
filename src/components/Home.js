@@ -29,10 +29,18 @@ const Home = () => {
   };
   
   const renderEvents = () => {
-    return events?.map(event => {
+    if (!events?.[0]) {
+      return (
+        <div id="no-events">
+          Sorry, there are currently no upcoming events.<br/> Check my instagram to stay updated on new things at Raidant Light!
+        </div>
+      )
+    }
+
+    return events.map(event => {
       const now = new Date();
       const eventExpires = new Date(event.expires);
-      
+    
       return (eventExpires > now) ? (
         <div className="col home-event-box" key={event.event_id} id={event.event_id}>
           <h1 className="event-home-title">{event.title}</h1>
@@ -41,7 +49,7 @@ const Home = () => {
           <p className="event-home-info">{event.location}</p>
           <Link to={`/event/${event.event_id}`} className="event-home-info">Read more</Link>
         </div>
-      ) : "";
+      ) : ""
     })
   }
   
@@ -61,6 +69,9 @@ const Home = () => {
       <div id="home-event-section" className="row">
         <h1>Upcoming Events:</h1>
         {renderEvents()}
+        <div id="instagram-home-section">
+          <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>
+        </div>
       </div>
       <div id="home-booking-section">
         <h3>If you are a returning client looking to book, I now have <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>online booking!</a></h3>

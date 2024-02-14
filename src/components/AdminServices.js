@@ -40,6 +40,7 @@ const AdminServices = () => {
           </div>
           <img src={service.picture_url} alt="" className="admin-service-display-image" />
           <h1 className="service-title">{service.title}</h1>
+          <h3 className="service-cat">{service.category}</h3>
           <h3 className="photo-cat">{service.description}</h3>
           <h3 className="photo-cat">{service.price}</h3>
         </div>

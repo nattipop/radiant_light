@@ -8,7 +8,7 @@
 
 .about-main {
   margin-top: -102px;
-  background-color: var(--light-tan);
+  background-color: var(--lighter-tan);
   position: relative;
   z-index: 10;
   padding: 80px;
@@ -44,7 +44,7 @@
 }
 
 #about-general {
-  background-color: var(--lighter-tan);
+  background-color: var(--light-tan);
 }
 
 #mts-img-2 {
@@ -84,12 +84,12 @@
 #about-verse {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: absolute;
   background-color: var(--overlay);
   background-repeat: none;
   color: var(--light-tan);
-  padding: 70px 100px 113px 100px;
+  padding: 50px 100px 113px 100px;
   text-align: center;
   z-index: 0;
   font-family: "Gabarito", sans-serif;
@@ -97,7 +97,7 @@
 }
 
 #radiant {
-  margin: 10px;
+  margin: 15px 80px 15px 15px;
 }
 
 #about-verse h3 {

@@ -4,30 +4,65 @@ import axios from "axios";
 import loadingGif from "../Bobbypin-loading.gif"
 
 const Services = () => {
-  const [data, setData] = useState();
-  console.log(data)
+  const [colors, setColors] = useState();
+  const [cuts, setCuts] = useState();
+  const [special, setSpecial] = useState();
+  const [extras, setExtras] = useState();
 
   useEffect(() => {
     document.title = "Radiant Light | Services"
     window.scrollTo(0, 0);
 
-    fetchData()
+    fetchColors();
+    fetchCuts();
+    fetchSpecial();
+    fetchExtras();
   }, []);
 
-  const fetchData = async () => {
+  const fetchColors = async () => {
     try {
-      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-services");
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Colors");
 
-      setData(response.data)
+      setColors(response.data)
     } catch(err) {
       console.log(err)
     }
   };
 
-  const renderServices = () => {
-    return data.map(service => {
+  const fetchCuts = async () => {
+    try {
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Cuts");
+
+      setCuts(response.data)
+    } catch(err) {
+      console.log(err)
+    }
+  };
+
+  const fetchSpecial = async () => {
+    try {
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Special-Occasions");
+
+      setSpecial(response.data)
+    } catch(err) {
+      console.log(err)
+    }
+  };
+
+  const fetchExtras = async () => {
+    try {
+      const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Extras");
+
+      setExtras(response.data)
+    } catch(err) {
+      console.log(err)
+    }
+  };
+  
+  const renderServices = (array) => {
+    return array?.map(service => {
       return (
-        <li id={service.service_id} key={service.service_id} className="service-li col">
+        <div id={service.service_id} key={service.service_id} className="service-li col">
           <div className="row">
             <div className="col-3 photo-column">
               <img src={service.picture_url} alt="" className="service-display-picture" />
@@ -38,12 +73,12 @@ const Services = () => {
           </div>
           <h3 className="service-description">{service.description}</h3>
           <h3 className="service-price">{service.price}</h3>
-        </li>
+        </div>
       )
     })
   }
 
-  return data ? (
+  return (colors && cuts) ? (
     <div id="services">
       <div className="row" id="service-header-row">
         <div className="col service-image-div" id="fade-col-div">
@@ -57,9 +92,24 @@ const Services = () => {
         <h1>Services</h1>
         <h3>Contact me to find the best service for you!</h3>
       </div>
-      <ul id="service-list" className="container row">
-        {renderServices()}
-      </ul>
+      <div id="service-list">
+        <h1 className="service-cat-titles">Colors</h1>
+        <div id="service-colors" className="container row">
+          {renderServices(colors)}
+        </div>
+        <h1 className="service-cat-titles">Cuts</h1>
+        <div id="service-colors" className="container row">
+          {renderServices(cuts)}
+        </div>
+        <h1 className="service-cat-titles">Special Occasions</h1>
+        <div id="service-colors" className="container row">
+          {renderServices(special)}
+        </div>
+        <h1 className="service-cat-titles">Extras</h1>
+        <div id="service-colors" className="container row">
+          {renderServices(extras)}
+        </div>
+      </div>
     </div>
   ) : (
     <div id="services">

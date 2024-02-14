@@ -32,6 +32,14 @@
 #animated-logo:hover {
   cursor: pointer;
 }
+#instagram-home-section {
+  background-color: rgba(36, 35, 35, 0.115);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 2px;
+}
 
 #home-event-section {
   height: auto;
@@ -39,6 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--contrast);
 }
 
 #home-booking-section {
@@ -58,18 +67,22 @@
 
 #home-booking-section h3 {
   font-family: "Gabarito", sans-serif;
-  font-size: 30px;
-  margin: 15px;
+  font-size: 24px;
+  margin: 20px;
 }
 
 #home-reviews-section {
   height: auto;
-  padding: 100px;
+  padding: 50px 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--lighter-tan);
-  color: var(--pink);
+  color: var(--contrast);
+}
+
+#home-reviews-section h1 {
+  margin: 30px;
 }
 
 .home-event-box {
@@ -104,6 +117,7 @@ a.event-home-info:hover {
   background-color: var(--light-tan);
   position: relative;
   z-index: 15;
+  padding: 30px 100px;
 }
 
 #address-col {
@@ -137,6 +151,12 @@ a.event-home-info:hover {
   min-width: 64px;
   max-width: 64px;
   max-height: 64px;
+}
+
+#no-events {
+  font-family: "Gabarito", sans-serif;
+  font-size: 18px;
+  padding: 50px;
 }
 
 /* Single Event Styling */
@@ -202,6 +222,10 @@ a.event-home-info:hover {
   #event-back {
     top: 180px;
   }
+
+  #location-map {
+    padding: 30px;
+  }
 }
 
 /* M */
@@ -213,6 +237,10 @@ a.event-home-info:hover {
   #single-event-main {
     margin: 50px 20px;
     padding: 20px 50px;
+  }
+
+  #location-map {
+    padding: 30px 0px;
   }
 }
 
