@@ -39,11 +39,18 @@
   align-items: center;
   padding: 20px 20px;
   border-radius: 2px;
+  overflow: hidden;
+}
+
+#tagline {
+  background-color: var(--teal);
+  padding: 50px;
+  color: var(--light-tan);
 }
 
 #home-event-section {
   height: auto;
-  padding: 30px;
+  padding: 100px 30px 100px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,10 +86,12 @@
   justify-content: center;
   background-color: var(--lighter-tan);
   color: var(--contrast);
+  overflow: hidden;
 }
 
 #home-reviews-section h1 {
   margin: 30px;
+  overflow: hidden;
 }
 
 .home-event-box {
@@ -252,13 +261,9 @@ a.event-home-info:hover {
 }
 
 @media (max-width: 600px) {
-  #home-reviews-section {
+  /* #home-reviews-section {
     padding: 20px 0px;
-  }
-
-  .icon-arrow-left {
-    top: 50px;
-  }
+  } */
 }
 
 /* XS */

@@ -14,6 +14,10 @@ body {
   --overlay: rgba(227, 101, 79, 0.3);
 }
 
+div.prev {
+  top: 50px !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

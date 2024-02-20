@@ -72,6 +72,7 @@
   margin: 10px;
   max-width: calc(50% - 20px);
   min-width: calc(50% - 20px);
+  box-shadow: 3px 3px rgba(36, 35, 35, 0.432);
 }
 
 .service-display-picture {

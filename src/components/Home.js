@@ -66,6 +66,9 @@ const Home = () => {
           }} />
         </div>
       </div>
+      <div id="tagline">
+        <h1>Cultivating true beauty since 2023</h1>
+      </div>
       <div id="home-event-section" className="row">
         <h1>Upcoming Events:</h1>
         {renderEvents()}
