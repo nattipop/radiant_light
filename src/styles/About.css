@@ -241,7 +241,11 @@
   }
 
   #about-general {
-    padding: 20px;
+    padding: 40px 20px;
+  }
+
+  #meet-the-stylist-portion {
+    padding: 40px 20px;
   }
 
   #meet-the-stylist-title {
@@ -292,7 +296,8 @@
   }
 
   #mts-img-2 {
-    width: 250px;
+    width: calc(100vw - 80px);
+    max-height: 250px;
   }
 
   #meet-the-stylist-title h1 {
@@ -301,12 +306,15 @@
 
   #meet-the-stylist-portion {
     margin-top: 50px;
-    padding: 40px 40px;
   }
 
   .mts-desc {
     font-size: 18px;
     width: 100%;
+  }
+
+  #meet-paragraph {
+    font-size: 18px;
   }
 
   #about-verse {

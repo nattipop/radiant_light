@@ -1,10 +1,9 @@
 #admin {
-  background-color: var(--light-tan);
-  height: 400px;
-  margin-top: 80px;
+  background-color: var(--overlay);
+  margin-top: 40px;
   font-family: "Gabarito", sans-serif;
   color: var(--contrast);
-  padding: 50px;
+  padding: 100px;
 }
 
 .admin-input {
@@ -23,4 +22,11 @@
 #error-message {
   font-size: 15px;
   color: var(--pink);
+}
+
+@media (max-width: 1024px) {
+  #admin {
+    margin-top: 0px;
+    padding: 250px 100px 100px 100px;
+  }
 }
