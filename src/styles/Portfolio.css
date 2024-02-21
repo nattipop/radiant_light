@@ -78,6 +78,28 @@
   z-index: 14;
 }
 
+#color-view-more {
+  font-size: 18px;
+  margin: 10px 10px 30px 10px;
+}
+
+#wedding-view-more {
+  font-size: 18px;
+}
+
+#photo-main-title {
+  font-family: "Julius Sans One", sans-serif;
+  position: absolute;
+  font-size: 40px;
+  left: calc(50vw - 111px);
+  top: 120px;
+  background-color: var(--pink);
+  color: var(--light-tan);
+  padding: 0px 5px;
+  width: 222px;
+  z-index: 14;
+}
+
 /* MOBILE STYLING */
 /* 2XL */
 @media (max-width: 1536px) {
@@ -144,6 +166,10 @@
   #colors-photos-col {
     order: 2;
     margin-top: -48px;
+  }
+
+  #colors-row {
+    padding-top: 30px;
   }
 }
 

@@ -14,6 +14,7 @@ import Admin from './Admin';
 import AdminPrivate from './AdminPrivate';
 import NavSmall from './NavSmall';
 import { Link } from 'react-router-dom';
+import Weddings from './Weddings';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Portfolio />} />
+        <Route path="/gallery/:category" element={<Weddings />} />
         <Route path="/admin" element={<Admin />} />
         <Route element={<AuthOutlet fallbackPath='/admin' />}>
           <Route path='/admin-private/*' element={<AdminPrivate/>} />

@@ -90,7 +90,7 @@ const Services = () => {
       </div>
       <div id="services-hero-text">
         <h1>Services</h1>
-        <h3>Contact me to find the best service for you!</h3>
+        <h3>Contact me to find the service that's right for you!</h3>
       </div>
       <div id="service-list">
         <h1 className="service-cat-titles">Colors</h1>

@@ -17,6 +17,7 @@
 .footer-contact {
   font-size: 20px;
   color: var(--teal);
+  font-family: "Gabarito", sans-serif;
 }
 
 .footer-contact a {

@@ -32,7 +32,7 @@ const Home = () => {
     if (!events?.[0]) {
       return (
         <div id="no-events">
-          Sorry, there are currently no upcoming events.<br/> Check my instagram to stay updated on new things at Raidant Light!
+          Sorry, there are currently no upcoming events.<br/> Check my instagram to stay updated on new things at Radiant Light!
         </div>
       )
     }
@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </div>
       <div id="home-booking-section">
-        <h3>If you are a returning client looking to book, I now have <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>online booking!</a></h3>
+        <h3>Now offering <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>online booking</a> for existing clients!</h3>
       </div>
       <div id="home-reviews-section" className="row">
         <h1>Kind Words</h1>

@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import "../styles/Portfolio.css";
 import axios from "axios";
 import loadingGif from "../Bobbypin-loading.gif";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [weddingsData, setWeddingsData] = useState();
   const [colorsData, setColorsData] = useState();
-  const [enlarge, setEnlarge] = useState();
 
   const fetchPhotos = async () => {
     try {
@@ -36,16 +36,15 @@ const Portfolio = () => {
   const renderWeddings = () => {
     return weddingsData.filter((photo, idx) => idx < 4).map(photo => {
       return (
-        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} onClick={()=> setEnlarge(photo.photo_id)} />
+        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
     })
   };
 
-  console.log(enlarge)
   const renderColors = () => {
     return colorsData.filter((photo, idx) => idx < 4).map(photo => {
       return (
-        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} onClick={()=> setEnlarge(photo.photo_id)} />
+        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} />
       )
     })
   }
@@ -59,13 +58,13 @@ const Portfolio = () => {
         </div>
         <div className="col" id="wedding-photos-col">
           {renderWeddings()}
-          <button>View More</button>
+          <Link to="/gallery/Weddings"><button id="wedding-view-more" className="button-style edit-button">View More</button></Link>
         </div>
       </div>
       <div className="row" id="colors-row">
         <div className="col" id="colors-photos-col">
           {renderColors()}
-          <button>View More</button>
+          <Link to="/gallery/Colors"><button id="color-view-more" className="button-style edit-button">View More</button></Link>
         </div>
         <div className="col" id="colors-display-col">
           <img id="colors-main-photo" src="https://res.cloudinary.com/dawteptkh/image/upload/v1706713452/IMG_6728_w3e7nc.jpg" alt="" width="450px" />
