@@ -8,17 +8,17 @@ import createStore from 'react-auth-kit/createStore';
 import AuthProvider from 'react-auth-kit';
 import { Route, Routes } from 'react-router';
 import AuthOutlet from '@auth-kit/react-router/AuthOutlet';
-import Event from './Event';
-import PageNotFound from './PageNotFound';
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
-import Portfolio from './Portfolio';
-import Services from './Services';
-import Admin from './Admin';
-import AdminPrivate from './AdminPrivate';
-import NavSmall from './NavSmall';
-import Weddings from './Weddings';
+import Event from './components/Event.js';
+import PageNotFound from './components/PageNotFound';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import Services from './components/Services';
+import Admin from './components/Admin';
+import AdminPrivate from './components/AdminPrivate';
+import NavSmall from './components/NavSmall';
+import Weddings from './components/Weddings';
 
 const store = createStore({
   authName:'_auth',
