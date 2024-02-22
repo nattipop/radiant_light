@@ -1,5 +1,3 @@
-import "../styles/index.css";
-import '../styles/App.css';
 import Nav from './Nav';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';

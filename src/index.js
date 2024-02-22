@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter } from 'react-router-dom';
-import App from "./components/App.js"
-import "./styles/index.css";
 import "./styles/App.css";
+import "./styles/index.css";
+import App from "./components/App.js"
 import createStore from 'react-auth-kit/createStore';
 import AuthProvider from 'react-auth-kit';
 import { Route, Routes } from 'react-router';
@@ -33,7 +33,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider store={store}>
     <BrowserRouter>
-      <App />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/event/:eventId" element={<Event />} />
@@ -49,6 +48,7 @@ root.render(
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <App />
     </BrowserRouter>
   </AuthProvider>
 );
