@@ -8,6 +8,7 @@ const Weddings = () => {
   const [photos, setPhotos] = useState();
   const [enlarge, setEnlarge] = useState();
   const {category} = useParams();
+  const [oneImage, setOneImage] = useState();
   console.log(category)
   console.log(enlarge)
 
@@ -31,22 +32,33 @@ const Weddings = () => {
   const renderPhotos = () => {
     return photos.map(photo => {
       return (
-        <img className="gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} onClick={()=> setEnlarge(photo.photo_id)} />
+        <img className="wed-gallery-img" src={photo.url} alt="" width="200px" key={photo.photo_id} onClick={()=> {
+          setEnlarge(photo)
+        }} />
       )
     })
   }
 
+  const renderEnlarged = () => {
+    return enlarge ? (
+      <div id="overlay">
+        <h1 onClick={() => setEnlarge("")}>X</h1>
+        <img id="enlarged-image" src={enlarge.url} alt="" />
+      </div>
+    ) : ""
+  }
 
   return photos ? (
-    <div className="row" id="wedding-row">
-      <div className="col" id="wedding-display-col">
+    <div className="row" id="wed-row">
+      <div className="col" id="wed-display-col">
         <h1 id="photo-main-title">{category}</h1>
-        <img id="wedding-main-photo" src={photos[0].url} alt="" width="450px" />
+        <img id="wed-main-photo" src={(category === "Weddings" ? "https://res.cloudinary.com/dawteptkh/image/upload/v1701362955/IMG_3905_e7f9vd.jpg" : "https://res.cloudinary.com/dawteptkh/image/upload/v1708456218/IMG_8213_dzpfou.jpg")} alt="" width="450px" />
       </div>
-      <div className="col" id="wedding-photos-col">
+      <div className="col" id="wed-photos-col">
         {renderPhotos()}
         <Link to="/gallery"><button id="wedding-view-more" className="button-style edit-button">Back</button></Link>
       </div>
+      {renderEnlarged()}
     </div>
   ) : ""
 }
