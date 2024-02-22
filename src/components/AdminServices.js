@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/AdminServices.css";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import loadingGif from "../Bobbypin-loading.gif";
 

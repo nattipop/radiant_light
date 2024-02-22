@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/Services.css";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import loadingGif from "../Bobbypin-loading.gif"
 
 const Services = () => {

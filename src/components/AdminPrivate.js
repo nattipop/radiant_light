@@ -10,7 +10,7 @@ import EditPhoto from "./EditPhoto";
 import NewService from "./NewService";
 import EditService from "./EditService";
 import { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import NewEvent from "./NewEvent";
 import EditEvent from "./EditEvent";
 
@@ -26,7 +26,7 @@ const AdminPrivate = () => {
   const fetchMessage = async () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/joy");
-      
+
       setJoy(response.data.message)
     } catch(err) {
       console.log(err)

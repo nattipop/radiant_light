@@ -2,13 +2,12 @@
 import { Link, useParams } from "react-router-dom";
 import "../styles/Portfolio.css";
 import { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const Weddings = () => {
   const [photos, setPhotos] = useState();
   const [enlarge, setEnlarge] = useState();
   const {category} = useParams();
-  const [oneImage, setOneImage] = useState();
   console.log(category)
   console.log(enlarge)
 

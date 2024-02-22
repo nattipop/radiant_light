@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/NewPhoto.css";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { useNavigate } from "react-router";
 
 const NewPhoto = () => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/NewPhoto.css"
 import { useNavigate } from "react-router";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const NewService = () => {
   const [title, setTitle] = useState();

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/Admin.css"
-import axios, { Axios } from "axios";
+import axios from "axios";
 import useSignIn from 'react-auth-kit/hooks/useSignIn';
 import { useNavigate } from "react-router";
 import loadingGif from "../Bobbypin-loading.gif"

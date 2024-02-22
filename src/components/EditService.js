@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import "../styles/EditPhoto.css";
 import { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const EditService = () => {
   const { serviceId } = useParams();
