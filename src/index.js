@@ -4,6 +4,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter } from 'react-router-dom';
 import App from "./components/App.js"
+import "./styles/index.css";
+import "./styles/App.css";
 import createStore from 'react-auth-kit/createStore';
 import AuthProvider from 'react-auth-kit';
 import { Route, Routes } from 'react-router';
