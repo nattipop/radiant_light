@@ -32,7 +32,7 @@ const Home = () => {
     if (!events?.[0]) {
       return (
         <div id="no-events">
-          Sorry, there are currently no upcoming events.<br/> Check my instagram to stay updated on new things at Radiant Light!
+          Sorry, there are currently no upcoming events.<br/> Visit my Instagram to catch the latest Radiant Light news!
         </div>
       )
     }
