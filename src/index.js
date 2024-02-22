@@ -7,7 +7,6 @@ import App from "./components/App.js"
 import createStore from 'react-auth-kit/createStore';
 import AuthProvider from 'react-auth-kit';
 import { Route, Routes } from 'react-router';
-import '../styles/App.css';
 import AuthOutlet from '@auth-kit/react-router/AuthOutlet';
 import Event from './Event';
 import PageNotFound from './PageNotFound';
