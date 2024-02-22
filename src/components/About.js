@@ -32,7 +32,7 @@ const About = () => {
           <div className="col mts-header">
             <h1 className="mts-title">About</h1>
             <p className="mts-desc" >Hey y'all!
-  I'm Hannah, owner of Radiant Light Hair Design established in 2023. At Radiant Light, I prioritize building relationships with each of my clients and customize my services to achieve their beauty goals. I have a passion for lived-in color looks as well as special event styling.  Whether you're walking down the aisle or looking for your go-to stylist, you've found the right place - welcome to Radiant Light!</p>
+  I'm Hannah, owner of Radiant Light Hair Design established in 2023. At Radiant Light, I prioritize building relationships with each of my clients and customize my services to achieve their beauty goals. I have a passion for lived-in color looks as well as special occasion styling.  Whether you're walking down the aisle or looking for your go-to stylist, you've found the right place - welcome to Radiant Light!</p>
           </div>
         </div>
       </div>
