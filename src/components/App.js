@@ -15,6 +15,13 @@ import AdminPrivate from './AdminPrivate';
 import NavSmall from './NavSmall';
 import { Link } from 'react-router-dom';
 import Weddings from './Weddings';
+import axios, { Axios } from 'axios';
+
+axios.interceptors.response.use((error) => {
+  if (Axios.isCancel(error)) {
+    return console.log(error);
+  }
+});
 
 function App() {
   return (
