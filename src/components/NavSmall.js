@@ -16,7 +16,7 @@ const NavSmall = () => {
             <h3><Link to="/services">Services</Link></h3>
           </li>
           <li aria-current="page" id="shop-link" className="nav-small-li raleway">
-            <h3><Link to="https://cp.salonhq.co/radiant-light-hair-design">Shop</Link></h3>
+            <h3><a href="https://cp.salonhq.co/radiant-light-hair-design" target="_blank" rel="noopener noreferrer">Shop</a></h3>
           </li>
           <li aria-current="page" id="gallery-link" className="nav-small-li raleway">
             <h3><Link to="/gallery">Gallery</Link></h3>
