@@ -23,11 +23,6 @@ const Services = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Colors");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setColors(response.data)
     } catch(err) {
       console.log(err)
@@ -38,11 +33,6 @@ const Services = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Cuts");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setCuts(response.data)
     } catch(err) {
       console.log(err)
@@ -53,11 +43,6 @@ const Services = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Special-Occasions");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setSpecial(response.data)
     } catch(err) {
       console.log(err)
@@ -68,11 +53,6 @@ const Services = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/service/Extras");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setExtras(response.data)
     } catch(err) {
       console.log(err)
