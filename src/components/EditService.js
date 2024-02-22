@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import "../styles/EditPhoto.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios, { Axios } from "axios";
 
 const EditService = () => {
   const { serviceId } = useParams();
@@ -23,6 +23,11 @@ const EditService = () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/service-by-id/${serviceId}`);
 
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setService(response.data);
       setNewDesc(response.data.description);
       setNewTitle(response.data.title);
@@ -49,9 +54,14 @@ const EditService = () => {
     console.log(newValues)
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.put(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/services/${serviceId}`, newValues);
 
-      console.log(response.data)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       navigate("/admin-private/services");
     } catch(err) {
       console.log(err);

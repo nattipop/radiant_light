@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -16,6 +16,11 @@ const Event = () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/event-by-id/${eventId}`);
 
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setEvent(response.data)
     } catch(err) {
       console.log(err)

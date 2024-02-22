@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/Home.css"
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -22,6 +22,11 @@ const Home = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-events");
       
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setEvents(response.data)
     } catch(err) {
       console.log(err)

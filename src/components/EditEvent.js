@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 
@@ -22,6 +22,12 @@ const EditEvent = () => {
   const fetchEvent = async () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/event-by-id/${eventId}`);
+
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
 
       setEvent(response.data);
       setNewDesc(response.data.description);
@@ -67,9 +73,14 @@ const EditEvent = () => {
     }
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.put(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/events/${eventId}`, newValues);
 
-      console.log(response.data)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       navigate("/admin-private/events");
     } catch(err) {
       console.log(err);

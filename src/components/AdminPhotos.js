@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import "../styles/AdminPhotos.css";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import loadingGif from "../Bobbypin-loading.gif"
 
@@ -17,6 +18,11 @@ const AdminPhotos = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-photos");
 
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setPhotos(response.data)
     } catch(err) {
       console.log(err)
@@ -51,7 +57,11 @@ const AdminPhotos = () => {
     try {
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-photo/${flaggedPhoto}`);
 
-      console.log(response)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       fetchPhotos();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {

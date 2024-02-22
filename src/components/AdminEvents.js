@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/AdminEvents.css";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import loadingGif from "../Bobbypin-loading.gif";
 
@@ -16,6 +16,12 @@ const AdminEvents = () => {
   const fetchEvents = async () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-events");
+
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
 
       setEvents(response.data)
     } catch(err) {
@@ -83,9 +89,14 @@ const AdminEvents = () => {
 
   const deleteEvent = async() => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-event/${flaggedEvent}`);
 
-      console.log(response)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       fetchEvents();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {

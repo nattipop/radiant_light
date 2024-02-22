@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/AdminServices.css";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import loadingGif from "../Bobbypin-loading.gif";
 
@@ -17,6 +17,11 @@ const AdminServices = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-services");
 
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setServices(response.data)
     } catch(err) {
       console.log(err)
@@ -50,9 +55,14 @@ const AdminServices = () => {
 
   const deleteService = async() => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-service/${flaggedService}`);
 
-      console.log(response)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       fetchServices();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {

@@ -2,7 +2,7 @@
 import { Link, useParams } from "react-router-dom";
 import "../styles/Portfolio.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios, { Axios } from "axios";
 
 const Weddings = () => {
   const [photos, setPhotos] = useState();
@@ -22,7 +22,12 @@ const Weddings = () => {
   const fetchPhotos = async () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/${category}`)
-    
+      
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setPhotos(response.data)
     } catch(err) {
       console.log(err)

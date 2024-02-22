@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import "../styles/EditPhoto.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios, { Axios } from "axios";
 
 const EditPhoto = () => {
   const { photoId } = useParams();
@@ -21,6 +21,12 @@ const EditPhoto = () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/photo-by-id/${photoId}`);
 
+
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       setPhoto(response.data);
       setNewCategory(response.data.category);
       setNewDesc(response.data.description);
@@ -43,9 +49,14 @@ const EditPhoto = () => {
     console.log(newValues)
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.put(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/${photoId}`, newValues);
 
-      console.log(response.data)
+      axios.interceptors.response.use((error) => {
+        if (Axios.isCancel(error)) {
+          return console.log(error);
+        }
+      });
       navigate("/admin-private/photos");
     } catch(err) {
       console.log(err);
