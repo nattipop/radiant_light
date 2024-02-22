@@ -71,9 +71,6 @@ body {
   .container {
     max-width: 768px;
   }
-  .App {
-    margin-top: -100px;
-  }
 }
 
 /* M */

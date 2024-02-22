@@ -23,3 +23,9 @@ code {
     monospace;
   color: #325560;
 }
+
+@media (max-width: 1024px) {
+  body {
+    margin-top: -100px;
+  }
+}
