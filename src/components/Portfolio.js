@@ -12,11 +12,6 @@ const Portfolio = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Weddings");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setWeddingsData(response.data)
     } catch(err) {
       console.log(err)
@@ -25,11 +20,6 @@ const Portfolio = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/photos/Colors");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setColorsData(response.data)
     } catch(err) {
       console.log(err)

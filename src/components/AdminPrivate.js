@@ -26,13 +26,7 @@ const AdminPrivate = () => {
   const fetchMessage = async () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/joy");
-
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
-
+      
       setJoy(response.data.message)
     } catch(err) {
       console.log(err)

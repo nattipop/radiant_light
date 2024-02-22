@@ -17,12 +17,6 @@ const AdminEvents = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-events");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
-
       setEvents(response.data)
     } catch(err) {
       console.log(err)
@@ -91,12 +85,7 @@ const AdminEvents = () => {
     try {
       // eslint-disable-next-line no-unused-vars
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-event/${flaggedEvent}`);
-
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
+      
       fetchEvents();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {

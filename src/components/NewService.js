@@ -28,12 +28,7 @@ const NewService = () => {
     try {
       // eslint-disable-next-line no-unused-vars
       const response = await axios.post("https://radiant-light-server-b649d90c9bb7.herokuapp.com/new-service", values);
-
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
+    
       navigate("/admin-private/services")
     } catch(err) {
       console.log(err)

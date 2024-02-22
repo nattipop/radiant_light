@@ -16,11 +16,6 @@ const Event = () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/event-by-id/${eventId}`);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setEvent(response.data)
     } catch(err) {
       console.log(err)

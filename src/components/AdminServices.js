@@ -17,11 +17,6 @@ const AdminServices = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-services");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setServices(response.data)
     } catch(err) {
       console.log(err)
@@ -58,11 +53,6 @@ const AdminServices = () => {
       // eslint-disable-next-line no-unused-vars
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-service/${flaggedService}`);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       fetchServices();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {

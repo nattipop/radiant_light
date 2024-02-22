@@ -26,12 +26,6 @@ const Admin = () => {
       setLoading(true);
       const response = await axios.post("https://radiant-light-server-b649d90c9bb7.herokuapp.com/login", values);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
-
       if(signin({
         auth: {
           token: response.data.token,

@@ -23,11 +23,6 @@ const EditService = () => {
     try {
       const response = await axios.get(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/service-by-id/${serviceId}`);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setService(response.data);
       setNewDesc(response.data.description);
       setNewTitle(response.data.title);
@@ -57,11 +52,6 @@ const EditService = () => {
       // eslint-disable-next-line no-unused-vars
       const response = await axios.put(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/services/${serviceId}`, newValues);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       navigate("/admin-private/services");
     } catch(err) {
       console.log(err);

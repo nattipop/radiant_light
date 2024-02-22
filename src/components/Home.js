@@ -21,12 +21,7 @@ const Home = () => {
   const fetchHomeEvents = async () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-events");
-      
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
+
       setEvents(response.data)
     } catch(err) {
       console.log(err)

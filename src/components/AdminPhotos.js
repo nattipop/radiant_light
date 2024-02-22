@@ -18,11 +18,6 @@ const AdminPhotos = () => {
     try {
       const response = await axios.get("https://radiant-light-server-b649d90c9bb7.herokuapp.com/all-photos");
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       setPhotos(response.data)
     } catch(err) {
       console.log(err)
@@ -57,11 +52,6 @@ const AdminPhotos = () => {
     try {
       const response = await axios.delete(`https://radiant-light-server-b649d90c9bb7.herokuapp.com/delete-photo/${flaggedPhoto}`);
 
-      axios.interceptors.response.use((error) => {
-        if (Axios.isCancel(error)) {
-          return console.log(error);
-        }
-      });
       fetchPhotos();
       document.getElementById("confirm-div").style.display = "none";
     } catch(err) {
