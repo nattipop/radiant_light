@@ -5,6 +5,7 @@
   font-size: 30px;
   padding: 50px 100px;
   font-family: "Julius Sans One", sans-serif;
+  background-color: var(--overlay);
 }
 
 #wedding-title {
@@ -28,10 +29,6 @@
 }
 
 @media (max-width: 800px) {
-  #portfolio {
-    padding: 10px;
-  }
-
   #colors-row {
     margin-top: 20px;
   }
