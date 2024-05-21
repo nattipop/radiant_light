@@ -72,3 +72,32 @@
 #yes {
   margin-right: 5px;
 }
+
+.upload-button {
+  background-color: var(--contrast);
+  margin: 10px;
+}
+
+#wedding-container {
+  width: 800px;
+  margin: auto;
+}
+
+#color-container {
+  width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  #wedding-container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #color-container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+}

@@ -52,6 +52,10 @@ body {
   width: 500px;
 }
 
+#page-not-found {
+  padding: 50px;
+}
+
 /* 2XL */
 @media (max-width: 1536px) {
   .container {

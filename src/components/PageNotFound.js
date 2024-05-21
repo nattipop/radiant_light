@@ -7,7 +7,7 @@ const PageNotFound = () => {
   }, []);
   
   return (
-    <div>
+    <div id="page-not-found">
       <h1 id="error-header">Oops! Page not found.</h1>
       <img src="https://media1.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif" alt="" />
     </div>

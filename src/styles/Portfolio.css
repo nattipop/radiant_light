@@ -1,298 +1,52 @@
 #portfolio {
   margin-top: 73px;
-  width: 100vw;
-  height: auto;
-  color: var(--pink);
-  font-size: 30px;
-  padding: 30px;
-  font-family: "Julius Sans One", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery-img {
-  height: 250px;
-  width: 220px;
-  object-fit: cover;
-  margin: 10px;
-  position: initial;
-  z-index: 5;
-}
-
-.wed-gallery-img {
-  height: 250px;
-  width: 220px;
-  object-fit: cover;
-  margin: 10px;
-  position: initial;
-  z-index: 5;
-}
-
-.wed-gallery-img:hover {
-  cursor: pointer;
-}
-
-#overlay {
-  height: 100%;
   width: 100%;
-  position: fixed;
-  background-color: rgba(36, 35, 35, 0.2);
-  top: 0px;
-  z-index: 25;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#overlay h1 {
-  float: right;
-  margin: 20px;
-  position: fixed;
-  top: 0px;
-  left: calc(100vw - 80px);
-}
-
-#overlay h1:hover {
-  cursor: pointer;
-}
-
-#enlarged-image {
-  position: fixed;
-  top: 0px;
-  margin: 10px;
-  z-index: 25;
-  height: calc(100vh - 20px);
-}
-
-#wedding-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
-#wed-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-}
-
-#wed-display-col {
-  min-width: 100%;
-  float: right;
-}
-
-#wed-main-photo {
-  min-width: 100%;
-  max-width: 100%;
-  border-radius: 0;
-  height: 400px;
-  object-fit: cover;
-}
-
-#wedding-display-col {
-  float: right;
-}
-
-#wedding-main-photo {
-  height: 550px;
-  object-fit: cover;
-  border-radius: 100px;
+  height: auto;
+  font-size: 30px;
+  padding: 50px 100px;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 #wedding-title {
-  position: absolute;
-  font-size: 40px;
-  left: calc(100vw / 3);
-  top: 200px;
-  background-color: var(--pink);
-  color: var(--light-tan);
-  padding: 0px 5px;
-  width: 222px;
-  z-index: 14;
+  color: var(--pink);
 }
 
-#colors-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
-  padding-top: 100px;
-}
-
-#colors-display-col {
-  float: right;
-}
-
-#colors-main-photo {
-  height: 550px;
-  object-fit: cover;
-  border-radius: 100px;
+#wedding-container {
+  padding: 0px 150px;
 }
 
 #colors-title {
-  position: absolute;
-  font-size: 40px;
-  left: calc(100vw / 1.9);
-  top: 800px;
-  background-color: var(--pink);
-  color: var(--light-tan);
-  padding: 0px 5px;
-  width: 166px;
-  z-index: 14;
+  color: var(--pink);
 }
 
-#color-view-more {
-  font-size: 18px;
-  margin: 10px 10px 30px 10px;
+#colors-row {
+  margin-top: 100px;
 }
 
-#wedding-view-more {
-  font-size: 18px;
-  position: sticky;
+#color-container {
+  padding: 0px 150px;
 }
 
-#photo-main-title {
-  font-family: "Julius Sans One", sans-serif;
-  position: absolute;
-  font-size: 40px;
-  left: calc(50vw - 111px);
-  top: 200px;
-  background-color: var(--pink);
-  color: var(--light-tan);
-  padding: 0px 5px;
-  width: 222px;
-  z-index: 14;
-}
-
-/* MOBILE STYLING */
-/* 2XL */
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1288px;
-  }
-}
-
-@media (min-width: 1288px) {
-  #colors-title {
-    top: 1000px;
-  }
-}
-
-/* XL */
-@media (max-width: 1288px) {
-  #wedding-row {
-    margin: 0px;
+@media (max-width: 800px) {
+  #portfolio {
+    padding: 10px;
   }
 
   #colors-row {
-    margin: 0px;
-  }
-}
-
-/* L */
-@media (max-width: 1024px) {
-  #wedding-main-photo {
-    min-width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    height: 400px;
+    margin-top: 20px;
   }
 
-  #portfolio {
+  #wedding-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0px;
   }
 
-  #wedding-display-col {
-    min-width: 100%;
-  }
-
-  #wedding-title {
-    font-size: 40px;
-    left: calc(50vw - 111px);
-    top: 350px;
-  }
-
-  #colors-main-photo {
-    min-width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    height: 350px;
-  }
-
-  #colors-display-col {
-    min-width: 100%;
-    order: 1;
-  }
-
-  #colors-title {
-    font-size: 40px;
-    left: calc(50vw - 83px);
-    position: relative;
-    top: 0;
-    margin-top: -24px;
-    margin-bottom: 24px;
-  }
-
-  #colors-photos-col {
-    order: 2;
-    margin-top: -48px;
-  }
-
-  #colors-row {
-    padding-top: 30px;
-  }
-
-  #photo-main-title {
-    top: 120px;
-  }
-}
-
-@media (max-width: 960px) {
-  .gallery-img {
-    min-width: calc(25vw - 20px);
-    max-width: calc(25vw - 20px);
-  }
-
-  .wed-gallery-img {
-    min-width: calc(25vw - 20px);
-    max-width: calc(25vw - 20px);
-  }
-}
-
-@media (max-width: 780px) {
-  #wedding-photos-col {
-    margin: 0px 50px;
-  }
-
-  #colors-photos-col {
-    margin: -48px 50px 50px 50px;
-  }
-
-  #enlarged-image {
-    width: calc(100vw - 50px);
-    object-fit: cover;
-    height: auto;
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 582px) {
-  #wedding-photos-col {
-    margin: 0;
-  }
-
-  #colors-photos-col {
-    margin: -48px 0 50px 0;
-  }
-}
-/* XS */
-@media (max-width: 495px) {
-  .gallery-img {
-    max-width: calc(50vw - 6px);
-    max-height: calc(50vw - 6px);
-    margin: 0px 2px 0px 0px;
-    padding: 3px;
+  #color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
   }
 }

@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import AdminServices from "./AdminServices";
 import AdminEvents from "./AdminEvents";
 import AdminPhotos from "./AdminPhotos";
-import NewPhoto from "./NewPhoto";
-import EditPhoto from "./EditPhoto";
 import NewService from "./NewService";
 import EditService from "./EditService";
 import { useEffect, useState } from "react";
@@ -52,8 +50,6 @@ const AdminPrivate = () => {
           <Route path="/services/new" element={<NewService />} />
           <Route path="/services/edit/:serviceId" element={<EditService />} />
           <Route path="/photos" element={<AdminPhotos />} />
-          <Route path="/photos/new" element={<NewPhoto />} />
-          <Route path="/photos/edit/:photoId" element={<EditPhoto />} />
           <Route path="/events" element={<AdminEvents />} />
           <Route path="/events/new" element={<NewEvent />} />
           <Route path="/events/edit/:eventId" element={<EditEvent />} />

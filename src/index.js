@@ -20,7 +20,6 @@ import Services from './components/Services';
 import Admin from './components/Admin';
 import AdminPrivate from './components/AdminPrivate';
 import NavSmall from './components/NavSmall';
-import Weddings from './components/Weddings';
 
 const store = createStore({
   authName:'_auth',
@@ -41,7 +40,6 @@ root.render(
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Portfolio />} />
-        <Route path="/gallery/:category" element={<Weddings />} />
         <Route path="/admin" element={<Admin />} />
         <Route element={<AuthOutlet fallbackPath='/admin' />}>
           <Route path='/admin-private/*' element={<AdminPrivate/>} />
