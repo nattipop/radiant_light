@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --light-teal: rgb(175, 192, 197);
-  --teal: rgb(50, 87, 98);
-  --contrast: rgb(36, 35, 35);
-  --pink: rgb(228, 99, 76);
+  --light-teal: #afc0c5;
+  --teal: #325762;
+  --contrast: #242323;
+  --pink: #e4634c;
   --light-tan: #f2e6d2;
   --lighter-tan: rgb(255, 248, 236);
   --overlay: rgba(227, 101, 79, 0.3);

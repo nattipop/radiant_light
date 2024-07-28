@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/Home.css"
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Widget } from "@typeform/embed-react";
 
 const Home = () => {
   const [currentLogo, setCurrentLogo] = useState("https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif");
@@ -83,6 +84,10 @@ const Home = () => {
         <h1>Kind Words</h1>
         <rw-widget-inline data-rw-inline="39803"></rw-widget-inline>
       </div>
+      <div id="bridal-inquiry-section">
+        <h1 id="bridal-inquiry-header">Looking for a bridal stylist?<br/><button onClick={() => document.getElementById("form-pop-up").style.display = "flex"} className="bridal-inquiry-button">Fill out an inquiry form</button><Link to="/gallery" className="bridal-inquiry-button">View my wedding portfolio</Link></h1>
+        <img id="bridal-inquiry-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1716249935/rlhd-weddings/IMG_3905_nwntgx.jpg" alt="" />
+      </div>
       <div id="location-map">
         <div id="address-div" className="row">
           <div className="col-8" id="iframe-col">
@@ -105,6 +110,10 @@ const Home = () => {
             <a href="https://www.google.com/maps/place/Radiant+Light+Hair+Design/@45.5015508,-91.7357139,17z/data=!3m1!4b1!4m6!3m5!1s0x52acfbd9c7c63e37:0xea92cb26d0b2664d!8m2!3d45.5015471!4d-91.733139!16s%2Fg%2F11vbcltj_g?entry=ttu"><h3 className="address">1 S Main St Rice Lake, WI 54868</h3></a>
           </div>
         </div>
+      </div>
+      <div id="form-pop-up">
+        <p id="form-x" onClick={() => document.getElementById("form-pop-up").style.display = "none"}>Close Form</p>
+        <Widget id="HTdWIBW8" className="my-form mobile-form" />
       </div>
     </div>
   )
