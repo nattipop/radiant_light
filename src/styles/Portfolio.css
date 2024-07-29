@@ -77,7 +77,7 @@
 
 @media (max-width: 800px) {
   #portfolio {
-    padding: 100px 0px;
+    padding: 100px -30px;
   }
   #colors-row {
     margin-top: 20px;
