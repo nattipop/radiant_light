@@ -1,11 +1,48 @@
 #portfolio {
-  margin-top: 73px;
   width: 100%;
   height: auto;
   font-size: 30px;
   padding: 50px 100px;
   font-family: "Julius Sans One", sans-serif;
   background-color: var(--light-tan);
+  position: relative;
+  z-index: 20;
+  margin-top: -100px;
+}
+
+#gallery-hero-text {
+  position: absolute;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  background-color: var(--overlay);
+  height: 450px;
+  width: 100%;
+  padding-top: 200px;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  color: var(--light-tan);
+}
+
+#gallery-header-row {
+  margin-bottom: 50px;
+}
+
+#gallery-image-one {
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1720797299/rlhd-colors/IMG_1956_vpsj3k.jpg");
+  background-size: cover;
+  background-position: 0px -350px;
+  max-width: 100vw;
+  min-width: 100vw;
+  z-index: -1;
+  height: 450px;
+  margin-top: -50px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 #wedding-title {
@@ -28,6 +65,16 @@
   padding: 0px 150px;
 }
 
+@media (max-width: 1024px) {
+  #gallery-image-one {
+    background-position: 0px 0px;
+  }
+
+  #gallery-hero-text {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 800px) {
   #portfolio {
     padding: 100px 0px;
@@ -48,5 +95,10 @@
     align-items: center;
     justify-content: center;
     padding: 0px;
+  }
+
+  #service-image-one {
+    background-position: 0 0;
+    width: 100%;
   }
 }
