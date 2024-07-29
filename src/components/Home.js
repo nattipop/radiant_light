@@ -85,7 +85,7 @@ const Home = () => {
         <rw-widget-inline data-rw-inline="39803"></rw-widget-inline>
       </div>
       <div id="bridal-inquiry-section">
-        <h1 id="bridal-inquiry-header">Looking for a bridal stylist?<br/><button onClick={() => document.getElementById("form-pop-up").style.display = "flex"} className="bridal-inquiry-button">Fill out an inquiry form</button><Link to="/gallery" className="bridal-inquiry-button">View my wedding portfolio</Link></h1>
+        <h1 id="bridal-inquiry-header">Brides inquire here<br/><button onClick={() => document.getElementById("form-pop-up").style.display = "flex"} className="bridal-inquiry-button">Inquiry form</button><Link to="/gallery" className="bridal-inquiry-button">View bridal portfolio</Link></h1>
         <img id="bridal-inquiry-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1716249935/rlhd-weddings/IMG_3905_nwntgx.jpg" alt="" />
       </div>
       <div id="location-map">

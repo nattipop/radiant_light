@@ -141,6 +141,8 @@ a.event-home-info:hover {
   width: 100%;
   font-family: "Gabarito", sans-serif;
   color: var(--lighter-tan);
+  font-size: 50px;
+  padding: 30px;
 }
 
 .bridal-inquiry-button {
@@ -150,7 +152,7 @@ a.event-home-info:hover {
   padding: 5px 7px;
   color: var(--lighter-tan);
   border-radius: 5px;
-  margin: 5px;
+  margin: 20px 5px;
 }
 
 .bridal-inquiry-button:hover {
@@ -267,6 +269,7 @@ a.event-home-info:hover {
   font-family: "Gabarito", sans-serif;
   color: var(--pink);
   z-index: 22;
+  font-size: 20px;
 }
 
 #form-x:hover {
