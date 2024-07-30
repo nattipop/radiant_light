@@ -20,7 +20,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview"
   },
   "eslintConfig": {
     "extends": [
