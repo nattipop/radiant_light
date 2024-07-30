@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/RadiantLightSquare.png" />
+    <link rel="icon" href="/RadiantLightSquare.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="og:description" content="Cultivating true beauty since 2023" />
@@ -15,24 +15,27 @@
       name="google-site-verification"
       content="otZ7Q1sd3TVXEkJH9j6bcdeXUJE0k-Zo8ILTg7poIIA"
     />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <title>Radiant Light | Home</title>
+    <script type="module" src="/src/index.jsx"></script>
     <script
       type="module"
       src="https://repuso.com/widgets/2.0/rw-widget-inline.js"
+      data-categories="analytics"
     ></script>
     <script
       src="https://static.elfsight.com/platform/platform.js"
       data-use-service-core
+      data-categories="analytics"
       defer
     ></script>
     <script
       src="https://upload-widget.cloudinary.com/latest/global/all.js"
       type="text/javascript"
+      data-categories="analytics"
     ></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script
       src="https://product-gallery.cloudinary.com/all.js"
