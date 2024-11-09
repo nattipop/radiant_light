@@ -6,12 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --light-teal: #afc0c5;
-  --teal: #325762;
+  --teal: #2d6373;
   --contrast: #242323;
   --pink: #e4634c;
   --light-tan: #f2e6d2;
   --lighter-tan: rgb(255, 248, 236);
-  --overlay: rgba(227, 101, 79, 0.3);
+  --overlay: rgba(199, 89, 70, 0.399);
 }
 
 div.prev {

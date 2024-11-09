@@ -18,6 +18,7 @@
 .home-image {
   height: 440px;
   object-fit: cover;
+  object-position: 0 -350px;
 }
 
 .home-overlay {

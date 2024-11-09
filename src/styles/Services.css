@@ -16,6 +16,11 @@
   z-index: 12;
 }
 
+.service-colors {
+  display: flex;
+  justify-content: center;
+}
+
 #service-list {
   margin: -102px 0px 0px 0px;
   max-width: none;

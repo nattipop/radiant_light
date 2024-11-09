@@ -22,11 +22,11 @@ const Footer = () => {
         <div className="col footer-col" id="times-col">
           <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
-          <h3 className="hours-times">Closed</h3>
+          <h3 className="hours-times">9am - 5pm</h3>
           <h3 className="hours-times">9am - 5pm</h3>
           <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
-          <h3 className="hours-times">By Appt.</h3>
+          <h3 className="hours-times">Closed</h3>
         </div>
         <div className="col footer-col" id="navigation-col">
           <Link to="/" className="footer-nav-link">Home</Link>

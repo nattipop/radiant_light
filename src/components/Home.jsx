@@ -57,7 +57,7 @@ const Home = () => {
   return (
     <div id="home">
       <div className="home-header">
-        <img className="home-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1700670304/IMG_4476_grrbmf.jpg" width="100%" alt="" />
+        <img className="home-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1731122736/IMG_2578_t7dmdg.jpg" width="100%" alt="" />
         <div className="home-overlay">
           <img id="animated-logo" src={currentLogo} width="730px" alt="" onClick={() => {
             setCurrentLogo("https://res.cloudinary.com/dawteptkh/image/upload/v1705461903/RLLoading_rscqks.gif")
@@ -76,9 +76,6 @@ const Home = () => {
         <div id="instagram-home-section">
           <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>
         </div>
-      </div>
-      <div id="home-booking-section">
-        <h3>Now offering <a href="https://radiantlighthd.glossgenius.com" target="popup" onClick={() => window.open('https://radiantlighthd.glossgenius.com/','Book an Appointment with USERNAME','width=600,height=400')}>online booking</a> for existing clients!</h3>
       </div>
       <div id="home-reviews-section" className="row">
         <h1>Kind Words</h1>

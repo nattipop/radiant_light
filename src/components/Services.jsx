@@ -94,11 +94,11 @@ const Services = () => {
       </div>
       <div id="service-list">
         <h1 className="service-cat-titles">Colors</h1>
-        <div id="service-colors" className="container row">
+        <div className="service-colors container row">
           {renderServices(colors)}
         </div>
         <h1 className="service-cat-titles">Cuts</h1>
-        <div id="service-colors" className="container row">
+        <div className="service-colors container row">
           {renderServices(cuts)}
         </div>
         <h1 className="service-cat-titles">Special Occasions</h1>
