@@ -333,7 +333,11 @@ a.event-home-info:hover {
 @media (max-width: 600px) {
   /* #home-reviews-section {
     padding: 20px 0px;
-  } */
+    } */
+  .home-image {
+    height: 440px;
+    object-position: 0 0 !important;
+  }
 }
 
 /* XS */
@@ -346,10 +350,6 @@ a.event-home-info:hover {
 @media (max-width: 340px) {
   #animated-logo {
     width: 200px;
-  }
-
-  .home-image {
-    height: 250px;
   }
 
   .home-overlay {
