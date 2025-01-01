@@ -71,7 +71,6 @@ const Home = () => {
         <h1>Cultivating true beauty since 2023</h1>
       </div>
       <div id="home-event-section" className="row">
-        <h1>Upcoming Events:</h1>
         {renderEvents()}
         <div id="instagram-home-section">
           <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>
