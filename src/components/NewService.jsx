@@ -14,6 +14,7 @@ const NewService = () => {
   const navigate = useNavigate();
 
   const formSubmit = async (e) => {
+    setServiceId((Math.random()*2302423))
     e.preventDefault()
     const values = {
       title: title,
@@ -54,7 +55,6 @@ const NewService = () => {
         </select>
         <input onChange={e => setPictureUrl(e.target.value)} id="url-input" className="form-inputs" title="url" placeholder="Picture Url" type="url" />
         <input onChange={e => setPrice(e.target.value)} id="price-input" className="form-inputs" title="price" placeholder="Price" type="text"/>
-        <input onChange={e => setServiceId(e.target.value)} id="id-input" className="form-inputs" title="service_id" placeholder="Id" type="text" />
         <p className="current-price">Select a display order (1 being top of the list)</p>
         <select onChange={e => {
           setDisplayOrder(e.target.value)
