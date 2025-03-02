@@ -27,7 +27,7 @@ const About = () => {
       <div className="bebas-neue about-main" id="about-general">
         <div className="row about-row">
           <div className="col-4 img-box">
-            <img className="mts-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1699925702/IMG_0489_i4l2xt.jpg" alt="" />
+            <img className="mts-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1740873641/IMG_6636_uptguh.jpg" alt="" />
           </div>
           <div className="col mts-header">
             <h1 className="mts-title">About</h1>
@@ -39,7 +39,7 @@ const About = () => {
       <div className="bebas-neue about-main" id="meet-the-stylist-portion">
         <div className="row about-row">
           <div id="meet-the-stylist-title">
-            <img className="mts-img" id="mts-img-2" src="https://res.cloudinary.com/dawteptkh/image/upload/v1699925688/IMG_0483_ltagcf.jpg" alt="" />
+            <img className="mts-img" id="mts-img-2" src="https://res.cloudinary.com/dawteptkh/image/upload/v1740874153/IMG_6627_fzl7q1.jpg" alt="" />
             <h1 id="meet-header">Meet the Stylist</h1>
             <p id="meet-paragraph">I'm North Carolina-born into a military family and have lived many places before settling in Wisconsin. Early on, I expressed my artistic nature through painting and drawing. When selecting a career, hair became my chosen canvas. I graduated from Northwood Technical College with my cosmetology degree in 2023.  As a creative entrepreneur, I love the flexibility and adventure that comes with owning my own business. Since opening Radiant Light, I've enjoyed both serving clients in my chair and traveling as a wedding hairstylist. When I'm not behind the chair, I love exploring new coffee shops or reading a great book. You also might find me enjoying God's creation while canoeing in the Boundary Waters or perched in a treestand!</p>
           </div>
