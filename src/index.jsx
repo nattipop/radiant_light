@@ -20,6 +20,7 @@ import Services from './components/Services.jsx';
 import Admin from './components/Admin.jsx';
 import AdminPrivate from './components/AdminPrivate.jsx';
 import NavSmall from './components/NavSmall.jsx';
+import file from "../public/833FD42546AC33B23F250AAD38A46470.txt";
 
 const store = createStore({
   authName:'_auth',
@@ -41,6 +42,7 @@ root.render(
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Portfolio />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/.well-known/pki-validation/">{file}</Route>
         <Route element={<AuthOutlet fallbackPath='/admin' />}>
           <Route path='/admin-private/*' element={<AdminPrivate/>} />
         </Route>
