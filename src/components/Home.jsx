@@ -29,30 +29,30 @@ const Home = () => {
     }
   };
   
-  const renderEvents = () => {
-    if (!events?.[0]) {
-      return (
-        <div id="no-events">
-          Sorry, there are currently no upcoming events.<br/> Visit my Instagram to catch the latest Radiant Light news!
-        </div>
-      )
-    }
+  // const renderEvents = () => {
+  //   if (!events?.[0]) {
+  //     return (
+  //       <div id="no-events">
+  //         Sorry, there are currently no upcoming events.<br/> Visit my Instagram to catch the latest Radiant Light news!
+  //       </div>
+  //     )
+  //   }
 
-    return events.map(event => {
-      const now = new Date();
-      const eventExpires = new Date(event.expires);
+  //   return events.map(event => {
+  //     const now = new Date();
+  //     const eventExpires = new Date(event.expires);
     
-      return (eventExpires > now) ? (
-        <div className="col home-event-box" key={event.event_id} id={event.event_id}>
-          <h1 className="event-home-title">{event.title}</h1>
-          <p className="event-home-info">{event.date}</p>
-          <p className="event-home-info">{event.time}</p>
-          <p className="event-home-info">{event.location}</p>
-          <Link to={`/event/${event.event_id}`} className="event-home-info">Read more</Link>
-        </div>
-      ) : ""
-    })
-  }
+  //     return (eventExpires > now) ? (
+  //       <div className="col home-event-box" key={event.event_id} id={event.event_id}>
+  //         <h1 className="event-home-title">{event.title}</h1>
+  //         <p className="event-home-info">{event.date}</p>
+  //         <p className="event-home-info">{event.time}</p>
+  //         <p className="event-home-info">{event.location}</p>
+  //         <Link to={`/event/${event.event_id}`} className="event-home-info">Read more</Link>
+  //       </div>
+  //     ) : ""
+  //   })
+  // }
   
   return (
     <div id="home">
@@ -71,7 +71,7 @@ const Home = () => {
         <h1>Cultivating true beauty since 2023</h1>
       </div>
       <div id="home-event-section" className="row">
-        {renderEvents()}
+        {/* {renderEvents()} */}
         <div id="instagram-home-section">
           <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>
         </div>
