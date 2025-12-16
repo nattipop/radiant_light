@@ -30,8 +30,8 @@
     ]
   },
   "engines": {
-    "node": "v16.14.2",
-    "npm": "9.8.1"
+    "node": "v24.11.0",
+    "npm": "11.6.1"
   },
   "browserslist": {
     "production": [
