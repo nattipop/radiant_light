@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="col footer-col" id="times-col">
           <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
-          <h3 className="hours-times">9am - 5pm</h3>
+          <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
           <h3 className="hours-times">Closed</h3>
           <h3 className="hours-times">9am - 5pm</h3>
@@ -36,7 +36,7 @@ const Footer = () => {
           <Link to="/contact" className="footer-nav-link">Contact</Link>
         </div>
       </div>
-      <p className="copyright">© Radiant Light Hair Design 2024</p>
+      <p className="copyright">© Radiant Light Hair Design 2026</p>
       <a href="https://www.vitawd.com/" className="vita-attribute">Website designed and built by Vita Web Design</a>
     </div>
   )
