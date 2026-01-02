@@ -5,38 +5,36 @@
   padding: 50px 100px;
   font-family: "Julius Sans One", sans-serif;
   background-color: var(--light-tan);
-  position: relative;
   z-index: 20;
-  margin-top: -100px;
+  margin-top: 73px;
 }
 
 #gallery-hero-text {
   position: absolute;
-  text-align: center;
   font-family: "Julius Sans One", sans-serif;
-  background-color: var(--overlay);
   height: 300px;
-  width: 100%;
-  padding-top: 165px;
-  top: 0px;
+  top: -10px;
   left: 0px;
   z-index: 10;
   color: var(--light-tan);
+  text-align: left;
+  background-color: var(--overlay);
+  padding: 210px 100px 200px 100px;
+  width: 100%;
 }
 
 #gallery-header-row {
   margin-bottom: 50px;
 }
 
+
 #gallery-image-one {
-  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1720797299/rlhd-colors/IMG_1956_vpsj3k.jpg");
   background-size: cover;
-  background-position: 0px -350px;
-  max-width: 100vw;
-  min-width: 100vw;
+  background-position: 0 -480px;
   z-index: -1;
   height: 450px;
-  margin-top: -100px;
+  margin-top: -50px;
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1767393278/IMG_0139_wvyslp.jpg");
 }
 
 .gallery-image {
@@ -72,6 +70,7 @@
 
   #gallery-hero-text {
     padding-top: 100px;
+    top: 0;
   }
 }
 

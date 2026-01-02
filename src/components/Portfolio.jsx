@@ -13,13 +13,12 @@ const Portfolio = () => {
   return (
     <div>
       <div className="row" id="gallery-header-row">
-        <div className="col service-image-div">
+        <div className="col gallery-image-div">
           <div className="gallery-image" id="gallery-image-one"></div>
         </div>
       </div>
       <div id="gallery-hero-text">
         <h1>Gallery</h1>
-        <h3> </h3>
       </div>
       <div id="portfolio">
         <div className="row" id="colors-row">
