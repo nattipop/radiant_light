@@ -30,6 +30,10 @@ const Contact = () => {
             <h1>Email:</h1>
             <p>radiantlighthd@gmail.com</p>
           </div>
+          <a href="https://pin.it/6jOBBDLMW" id="pinterest-link" className="col contact-col">
+            <img src="https://www.wblibrary.org/site-assets/images/pinterest-logo/@@images/image.png" width="50px" />
+            <p>Pinterest</p>
+          </a>
           <div id="instagram-section">
             <h1 className="instagram-header">Instagram</h1>
             <div className="elfsight-app-6def9017-3863-403a-98ab-a7b821c45292" data-elfsight-app-lazy></div>

@@ -82,7 +82,7 @@ const Home = () => {
       </div>
       <div id="bridal-inquiry-section">
         <h1 id="bridal-inquiry-header">Brides inquire here<br/><button onClick={() => document.getElementById("form-pop-up").style.display = "flex"} className="bridal-inquiry-button">Inquiry form</button><br/><Link to="/gallery" className="bridal-inquiry-button">View bridal portfolio</Link></h1>
-        <img id="bridal-inquiry-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1716249935/rlhd-weddings/IMG_3905_nwntgx.jpg" alt="" />
+        <img id="bridal-inquiry-img" src="https://res.cloudinary.com/dawteptkh/image/upload/v1767392253/IMG_0044_iwx9nh.jpg" alt="" />
       </div>
       <div id="location-map">
         <div id="address-div" className="row">
