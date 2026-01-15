@@ -70,6 +70,9 @@ const Home = () => {
       <div id="tagline">
         <h1>Cultivating true beauty since 2023</h1>
       </div>
+      <div id="newsletter-banner">
+        <h2>Sign up for my newsletter <button onClick={() => document.getElementById("newsletter-form-pop-up").style.display = "flex"} className="here-button">here!</button></h2>
+      </div>
       <div id="home-event-section" className="row">
         {/* {renderEvents()} */}
         <div id="instagram-home-section">
@@ -110,6 +113,10 @@ const Home = () => {
       <div id="form-pop-up">
         <p id="form-x" onClick={() => document.getElementById("form-pop-up").style.display = "none"}>Close Form</p>
         <Widget id="HTdWIBW8" className="my-form mobile-form" />
+      </div>
+      <div id="newsletter-form-pop-up">
+        <p id="newsletter-form-x" onClick={() => document.getElementById("newsletter-form-pop-up").style.display = "none"}>Close Form</p>
+        <Widget id="saH2XDJs" className="my-form mobile-form" />
       </div>
     </div>
   )
